@@ -4,38 +4,38 @@ Hash: SHA512
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Fri, 26 Jun 2026 15:13:49 +0000
+Date: Fri, 26 Jun 2026 15:33:56 +0000
 Description: UberMetroid APT Repository (stable/main)
 Label: ubermetroid
 Origin: ubermetroid
 Suite: stable
 MD5Sum:
- 47d64d4f40c90ffbab60bb34cd81cdd5              200 Release
- 0a840e841f81e65819ae5277ea28d0b9            80261 main/binary-amd64/Packages
- 855204a6b51d709d8320f0498243573b            15284 main/binary-amd64/Packages.gz
+ 130cba41109f34db31aaff6dba9a1848              200 Release
+ ee3e7a8888249e2092763f0485293ff8            80261 main/binary-amd64/Packages
+ d6130dc1e7d947ce2419d24dc4ce78cd            15284 main/binary-amd64/Packages.gz
 SHA1:
- 9b9d9477abacb6a9ba5b0d641a3dacf53abc5378              200 Release
- 5702d7a8e9e97432541986097e6e786398d4c6b0            80261 main/binary-amd64/Packages
- 6f0de24e8e57956a5889aebdca14a03d722092be            15284 main/binary-amd64/Packages.gz
+ ceec1ee022aba2a1f7c1f3ee7f80dcf4d53e6d0f              200 Release
+ 5deb873faaa8aea963527e82578145d2a1a9d5c3            80261 main/binary-amd64/Packages
+ e942b0ecc0d9acab3755a056de9f09dbfd1680e8            15284 main/binary-amd64/Packages.gz
 SHA256:
- 5f89c3907c2e7a5d3f52a5a7e5a763a6fabd159628217a2f17363448d0b668e2              200 Release
- d10235045a809aa94c9c4e7ec92afe93da25f913a41b0f4dc0895c96f1245807            80261 main/binary-amd64/Packages
- 6c59c6ac492f72ff840996d0e097541b188390a7c7d821db77e848ba5d06bce4            15284 main/binary-amd64/Packages.gz
+ 99e4f7e662a0c7454eb3c79efcd8ca3a02fa7c3e230e1f3d97b9c023f123b4ad              200 Release
+ ca8acea387cd475ea6e426bd471807f8f4c367cb65f1c27be7021b809606df8a            80261 main/binary-amd64/Packages
+ d0625d8482f27dca3dc4f25516c2cbcb9b6b5343a884a720755a06819e833a40            15284 main/binary-amd64/Packages.gz
 SHA512:
- 0d16029ec413c62546dca49426e8734253d4f29531f4f949698c9f5f48fe32f16238fd06f21983a93dcc58bd34d05ca310d627f378369916bae8c14145247cf4              200 Release
- a100e2939ef1fd648c5f66d5a7e7e23be5642bae1b6bd78494fb2aaac6a6283c30e24cfabc77143fa3d3deb6a5fbeb5edfd8c79353bb5d85346677fcb0092089            80261 main/binary-amd64/Packages
- f089d3beb75903a9106ccdbed11493615d835136257dbd73fceaa2a3592fa543163a5a12c230a1d7aa4992f72379e067afe5a8429aedcf853be2393f8b3325a9            15284 main/binary-amd64/Packages.gz
+ d41b451af7e584f8a9474a84ecb12eb45c449c8cc6a557c420805b048f57c4d80301a12e32a45eaf743b14a6bb59165702e229a6b448fa0c4b2b38ae0e1aeb07              200 Release
+ 7ce92a6de683961b2ede85ec6f4b2394f6502fb30995177cf3fafec557a00ad5a698a806e86a532d0b83f4e862e6c2886651f4c8565f2e29a7f1cfeffad352a3            80261 main/binary-amd64/Packages
+ a0d572af261387ae4d1a3f7d28f04f72b716dd30acd76b24c823f0710852e9738a89066c091d109a7286bd211bb949702ae29484ac23418dea7d18b1093f8b8b            15284 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQHJBAEBCgAzFiEE5AWNIPxY0SJEHSN9LHJt1Qdohm8FAmo+ly0VHGplcnlkbGV1
-Y2tAZ21haWwuY29tAAoJECxybdUHaIZv/PcL/2FqDLQ3BN5yGAAOG4vHedLEvlbl
-6sTW9z/4F/UFGKYt+cN/yKAv3WRdtGCqlZWXIOqxoFFTyqluYErMqEWiQVF5ZI0u
-3SlWDAJ7qkXA3TJgq09LH4zjBipfYBGo6jYvDygMIb7epVjUea6XW3fApaNqjgf1
-OF4urfeLlir086CYCHuLK7BMd+FcbQiYUkapKy6FT1i/aFHXT4Nj7BIRrIrNKO96
-QKuUuEACTkxDY/ebxMkxP/4xXIz34u8aHAavRedGDdE7eNjDuYw5sbUW4ENPzy2E
-WcQYzbS95nxDb69QGKhaHtZlrbY+KwlnY9ZaNMcHdcBswohkXLKXGPQ9k10rahTu
-dPyTrHsog6mxzAb7kxCxc5rmixRNjtV2Und2/jhEkvoqbrhK3lTIYGsPoWFNS1gN
-20BQ4QVksjYuTHdH8AltdRXtlEpDH5ikgNWqyVlBHAtW4o3k07MFC4F8LhxOUkC2
-ZMnuPDKaSXnRQ/dJNF8rsIz9JDnV6Hnz0Tve2A==
-=BSvV
+iQHJBAEBCgAzFiEE5AWNIPxY0SJEHSN9LHJt1Qdohm8FAmo+m+QVHGplcnlkbGV1
+Y2tAZ21haWwuY29tAAoJECxybdUHaIZvTBsL/0IMpEUgbUbEybIlZkS5W2Tqz64A
+bUAh2nvLAuJ0w6PB5ibn9GpTrZlRh9tmjlQmCV5vIP4MOPCnujuTVYC0++VGt+wJ
+Ppv6JJzjqXSQ5CxHGbSU+RB2QyJnXjPXrJzLIvL60Q8zafHfoiEL4U4Nm8KIfEkb
+ahUuilf+rnz+RD/n4sv87lBy2sxU8BntiZyQ2uQXLEOzbSIDrTD3MgSD+DWkK4hx
+jwK4WV93DAS3xFaodVP26zkUxZncmw+GQF/OJIT/5SEDBF+FZ/qQxtYNFN4UayPu
+CQRBgwaan3B0e+sWbQj0qsjkB4VQ1fdeyqxD7BUT5RYq1tBPxI1LeoOSZfUpDcqB
+A4hJ1cL/LaSMNeDYqAjq9QRpZeQgp01JV10gZ6EAwzfi137VasQMfrMUdta8Iiid
+1blICclcaUq2EMOGZdjGodFmF0UG4PzmJkobzrP15TdQ5ZPjVFVYIJvAgtvr0+UG
+Qem+pr62o7ChiHy2wDw22wGQpmiU+iovAYT1TA==
+=HA1b
 -----END PGP SIGNATURE-----
