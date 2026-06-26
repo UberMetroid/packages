@@ -1,0 +1,24 @@
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Fri, 26 Jun 2026 15:13:49 +0000
+Description: UberMetroid APT Repository (stable/main)
+Label: ubermetroid
+Origin: ubermetroid
+Suite: stable
+MD5Sum:
+ 47d64d4f40c90ffbab60bb34cd81cdd5              200 Release
+ 0a840e841f81e65819ae5277ea28d0b9            80261 main/binary-amd64/Packages
+ 855204a6b51d709d8320f0498243573b            15284 main/binary-amd64/Packages.gz
+SHA1:
+ 9b9d9477abacb6a9ba5b0d641a3dacf53abc5378              200 Release
+ 5702d7a8e9e97432541986097e6e786398d4c6b0            80261 main/binary-amd64/Packages
+ 6f0de24e8e57956a5889aebdca14a03d722092be            15284 main/binary-amd64/Packages.gz
+SHA256:
+ 5f89c3907c2e7a5d3f52a5a7e5a763a6fabd159628217a2f17363448d0b668e2              200 Release
+ d10235045a809aa94c9c4e7ec92afe93da25f913a41b0f4dc0895c96f1245807            80261 main/binary-amd64/Packages
+ 6c59c6ac492f72ff840996d0e097541b188390a7c7d821db77e848ba5d06bce4            15284 main/binary-amd64/Packages.gz
+SHA512:
+ 0d16029ec413c62546dca49426e8734253d4f29531f4f949698c9f5f48fe32f16238fd06f21983a93dcc58bd34d05ca310d627f378369916bae8c14145247cf4              200 Release
+ a100e2939ef1fd648c5f66d5a7e7e23be5642bae1b6bd78494fb2aaac6a6283c30e24cfabc77143fa3d3deb6a5fbeb5edfd8c79353bb5d85346677fcb0092089            80261 main/binary-amd64/Packages
+ f089d3beb75903a9106ccdbed11493615d835136257dbd73fceaa2a3592fa543163a5a12c230a1d7aa4992f72379e067afe5a8429aedcf853be2393f8b3325a9            15284 main/binary-amd64/Packages.gz

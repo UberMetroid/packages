@@ -1,0 +1,2179 @@
+Package: fly
+Version: 0.1.12-1
+Architecture: amd64
+Maintainer: Jeryd <jeryd@example.com>
+Installed-Size: 1987
+Depends: libc6 (>= 2.39)
+Filename: pool/main/fly_0.1.12-1_amd64.deb
+Size: 718028
+MD5sum: 97fff1173c404dd2fc064088013d3ede
+SHA1: ec2450d024ae10ecc1ee9565d84ba4e29cc14574
+SHA256: da9eb5255f2555b64fe8068767efc21c76caf07b5ee1b7574aaa893218e10dba
+Section: utils
+Priority: optional
+Description: fly - Standalone WiFi / Networking TUI - by local76
+ A fast, minimal, standalone WiFi / Networking TUI for Linux.
+ Focus on boot speed and clean 4-box interface using NetworkManager/netlink.
+
+Package: fly-applet
+Version: 0.1.12-1
+Architecture: amd64
+Maintainer: Jeryd <jeryd@example.com>
+Installed-Size: 11663
+Depends: libc6
+Filename: pool/main/fly-applet_0.1.12-1_amd64.deb
+Size: 3928116
+MD5sum: ed912cdf4aa65610b1de6e0057f66a53
+SHA1: e57107e0c7ca2d54493cb8d2b378de6b14c212dc
+SHA256: cddbcba456232d022057c602ef8c2896b13764ce7bfb9b9035c4c68b73e9a2bf
+Section: utils
+Priority: optional
+Description: Native System76 COSMIC Desktop panel applet for fly
+ Native System76 COSMIC Desktop panel applet for Wi-Fi management.
+
+Package: fly-daemon
+Version: 0.1.12-1
+Architecture: amd64
+Maintainer: Jeryd <jeryd@example.com>
+Installed-Size: 1664
+Depends: libc6
+Filename: pool/main/fly-daemon_0.1.12-1_amd64.deb
+Size: 584732
+MD5sum: b215786a83e2f7581b6ae7381dc20458
+SHA1: 98a0e1d3acb2bf1e3025d5625c27451d67e5ea92
+SHA256: 393a77b7fe7bcaed611aad1aaaaa1e4c68d2b771d72e4af4232d7d0c8bcfa2a1
+Section: utils
+Priority: optional
+Description: Background tray indicator daemon for fly
+ Background tray daemon for monitoring connection status and quick-launching
+ fly-tui.
+
+Package: fly-tui
+Version: 0.1.12-1
+Architecture: amd64
+Maintainer: Jeryd <jeryd@example.com>
+Installed-Size: 1884
+Depends: fly-applet, fly-daemon, libc6
+Filename: pool/main/fly-tui_0.1.12-1_amd64.deb
+Size: 684112
+MD5sum: c1f8f9504d2b161da38ef12e6bccb264
+SHA1: 2fe300f05d46c9666a38b88d6acdff7da5b87337
+SHA256: e76b2aaeba8e97e2ff3db7b9c9ab674c1fd6a817f9018c18b24e9dbd588cc8a2
+Section: utils
+Priority: optional
+Description: fly-tui - Interactive TUI configuration client for fly
+ Interactive WiFi/Networking TUI client.
+ This TUI pulls in fly-daemon and fly-applet as dependencies.
+
+Package: trance
+Version: 0.1.10-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 613
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.10-1_amd64.deb
+Size: 256372
+MD5sum: 1657433882ee2cd8fee975480a888893
+SHA1: 60ccabd11fdc06d4c4bec968964104ee3f223a08
+SHA256: 7689fa9b140f5dad58139a8106902e08e8bffbc841892c867f1c4f59ead5541c
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.11-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 614
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.11-1_amd64.deb
+Size: 256380
+MD5sum: 81a3a3666a343b6d7fc66cab3b023653
+SHA1: 3bab691c2e72304f3c5fa74c0cf0e3c08b872637
+SHA256: 042428c09290040ea3c035e52cd4f8bcb615a479579f016e3ccb37be88dc29b9
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.12-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 736
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.12-1_amd64.deb
+Size: 307344
+MD5sum: 4f4db36e3b12cffa5f3c30395e72f87c
+SHA1: e531fa996c72afde34091049b9fdd83f2f09a598
+SHA256: f10bc0b614fa0135552feb13f2d07dbbcc254b76195bd3e1653dbc3b3d6d5aa1
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.13-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 736
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.13-1_amd64.deb
+Size: 307496
+MD5sum: 0dc132b078504cba1114ecbe03b20648
+SHA1: 21f3cdf89e569988cb1f53d15b2704d189b6dae9
+SHA256: 013544df8870902787c77dfdd78f45b7276fe90eeeb91868d70eba3222e23ac5
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.14-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 736
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.14-1_amd64.deb
+Size: 307560
+MD5sum: bdd384db955ff38eac9af5fde2f1aabe
+SHA1: c2341f975a275c5b9c339f524011e4a054f76771
+SHA256: f0c1dcbc1256404eb31eeda22718322538e3b3fe10bfd2dd9f7f484623bd65f2
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.15-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 737
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.15-1_amd64.deb
+Size: 307924
+MD5sum: 556462457f0f58ccbf06b55c0196b774
+SHA1: 28e2c356004f76cb7ffa32c0753f81b4dcad43a8
+SHA256: ea59c062767fa200b0a38612c4f57229ef16a202e3e2b99a296248e0a8190ff1
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 613
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.4-1_amd64.deb
+Size: 255648
+MD5sum: 2a32012e0940b76d107a0b2aef281731
+SHA1: 5c87c438e09256c3379414b337fc65d4aaaf8edd
+SHA256: ade9a87a3a46d02e8635e5b75fe53b9e1f66794388e0a6c79e1db69f50ed8df4
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 613
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.5-1_amd64.deb
+Size: 255768
+MD5sum: 06a04e6ddedaf10c47d7455ac50f1149
+SHA1: c01969b3a9617a91ba31adc13ef18eab8235d13e
+SHA256: 8437199196be43c522847e9a8254c580129d03adf6beb3cad8cac15399bf1324
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 613
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.6-1_amd64.deb
+Size: 255696
+MD5sum: 57c88e212f29314f199d4f5e850dc85f
+SHA1: f0e7ec7e19315cabb29fe48d0487c16036028bcd
+SHA256: eba3a413d07d6ccdc2719ae25161558c4263508abe754cf1ac4bb212b67097a4
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.7-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 613
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.7-1_amd64.deb
+Size: 255748
+MD5sum: 4627ff836e065699df8cddade258b16d
+SHA1: c6b8f10cdd8e0d93100ab66f91246739c22dcc2e
+SHA256: 2585b64a8e850df3e6a2f68c1240e5e8446d9655e0407ab5f12d3060db8bb050
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.8-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 613
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.8-1_amd64.deb
+Size: 256088
+MD5sum: 52f43d48eaaf6f3032f19512f21e10ad
+SHA1: 3420bc20bdc161f57fb0debfcd12ef0d9e2f13a3
+SHA256: 170734d042466a3fe9cf40fd9d4261cc60f7282aa33e6ab832f20b3144b72a6a
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.1.9-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 613
+Depends: libc6, trance-plugin-beams, trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance_0.1.9-1_amd64.deb
+Size: 256280
+MD5sum: 86bc6419601db1bf398b3709105e0c28
+SHA1: ec4562b5b8a10b2ff31e8eb73dc6c5bc6ef27ea6
+SHA256: 2d8d01c671ad9213b3b275f9f6838c7afebadd4f9255971ca2072cceea01aaa2
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.0-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4082
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet
+Filename: pool/main/trance_0.2.0-1_amd64.deb
+Size: 1404488
+MD5sum: e4555af88670cffcd4407a32cb862e62
+SHA1: e51b44e74382fe617b0b6e5dc75033e1e8653e06
+SHA256: 7083d3a8d38970573e2e96d74a1f0143768a94db9d75812f2a59526798474af7
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.1-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4160
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet
+Filename: pool/main/trance_0.2.1-1_amd64.deb
+Size: 1424372
+MD5sum: 2c47958d18fe78db3ea25cf822d6466c
+SHA1: be535bdf0a64650d2e27d1d3a49fbff890cd8196
+SHA256: b70caa1d7b5ea56a17f8e54b8cdc2e25950617a0df426f3bb7d74c5f1af49b8f
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4150
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.2.2-1_amd64.deb
+Size: 1421980
+MD5sum: b5eb0d40634d1e06779d45610f5759ab
+SHA1: e7e79f3f82df3a36986c2075a8f9f7a41e421ced
+SHA256: 795ad2795e0569060a8505bbaf144e918f8896de9bc7f9e8b4ba69546a671f14
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4150
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.2.3-1_amd64.deb
+Size: 1421180
+MD5sum: d09f5f8c338627e999b6b096061a6219
+SHA1: 4e7cc271d4ef6a358d522809ee8c78744782f862
+SHA256: f41517e999833e023ed2cc61e82e4f3618e13ce8fa8d47ce3567d19c077ceffd
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4150
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.2.4-1_amd64.deb
+Size: 1421492
+MD5sum: 09ced5499888fb2511d5a18d59328222
+SHA1: e480ffcc2f79d9e5614a61ea3e9078cad5184544
+SHA256: 0eb0a0acec6be612336333e34bf97609d8f6494c05e0b66e96b7d4a28756de8e
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4148
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.2.5-1_amd64.deb
+Size: 1420600
+MD5sum: 29b9c1f614312f7486332210a21d4b4e
+SHA1: 75fdc2d486dadf8f8fb1332ad59ec5cb763edd6b
+SHA256: d6862b0cb18e566ac51f48f9b54fe75ea6b9725ec3bb59cb4612889218aa1998
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4147
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.2.6-1_amd64.deb
+Size: 1420456
+MD5sum: 42b93f6d70a4ebc5a79e80a568c909c7
+SHA1: 613cf3fa53a1dec5a3b01c90b6b1027291459ea2
+SHA256: ff83237f7b233e9503d95e271c80c2e02b0eb35bde993337db1193ca2c2239dc
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.7-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4146
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.2.7-1_amd64.deb
+Size: 1420228
+MD5sum: 58c0276147222893112869d4411fdbda
+SHA1: 1c90d05b17740672e61448570d1c805d831f1193
+SHA256: c446376e549dac4e48cd4cf80da801916157d964d7854e5a897715a95301cc7b
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.8-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2536
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.2.8-1_amd64.deb
+Size: 895084
+MD5sum: 9a3a52d109e08c50b8ce3bc6a553429b
+SHA1: c5c21d528b58a23cd90b0597e24319369677b082
+SHA256: 7ca5b7ab9fd78b2402efad36e0746f1d256bdf5d7605483b649326eedb1d0b3b
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.2.9-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2536
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.2.9-1_amd64.deb
+Size: 895032
+MD5sum: e4bc934ed420835f6bc21130d2a217ff
+SHA1: e33d9283bff367cb5e4a2686e88bf2856bbc6c5d
+SHA256: 9f63be19529d058a97f430f99260e96a4abed52874fcd33dfb3e129223406fcd
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.3.1-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2544
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.3.1-1_amd64.deb
+Size: 897632
+MD5sum: a8341a065c9ade3803170825ad559f6f
+SHA1: 873fd298582ee275a62ce5a3080d4c1ac21e1ea6
+SHA256: b293e4a36d6ae1980ea58ba65b0c6f4c06e1ea64444a79201017c185b34f7c79
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.3.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2544
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.3.2-1_amd64.deb
+Size: 897116
+MD5sum: 6895d6c5de2c96d16733d16c114cbc36
+SHA1: fab4ae9401f7eaf8c200ce0b0c64c9ba3211fa5c
+SHA256: 7508935a781968bf46b1314cfa62445cc21d551f1a2f9b8a154e0bd50a97312f
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.3.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2544
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.3.3-1_amd64.deb
+Size: 897184
+MD5sum: d2a34e10e1b48eef5f393e740f30cf9a
+SHA1: 357e7baacf6b33b5393361f4ca54658b7f4958b7
+SHA256: 5f9342e36dd1d08c95495ac0d28fb9427b795ad88004a36a3d9727bb297715f6
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.3.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2544
+Depends: dbus, fonts-dejavu-core, libc6, libvulkan1 | libgl1, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.3.4-1_amd64.deb
+Size: 897164
+MD5sum: ea34592e6ede5e3ee405613a046db4b7
+SHA1: 39f3582c3286400c5d218a62efe1f66a32db1c50
+SHA256: 3a5f217e38b9064b5df7a86c259c64f3a24bbf57a1d595203df2ea831efec1b2
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance-applet
+Version: 0.1.10-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11537
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.10-1_amd64.deb
+Size: 3889992
+MD5sum: 4ce6fe8cdb19c8f73379e6f464049691
+SHA1: 9bf31d75d677a81bb9b192a4ba01b7de7b341991
+SHA256: 9438cd76b7f1942b94d2561398a5a7e5549036b10b39ec4f068d99e149a834f4
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.11-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11537
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.11-1_amd64.deb
+Size: 3889748
+MD5sum: 521f8d7c98f9091d67b63ed7c6ba7a53
+SHA1: 5c0240f6ae6f262184f6a8d12225cf28e909fdd1
+SHA256: 77986e53385124d783abaaead3514aa8fc43e45cb667b3216be63d8ae22431d7
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.12-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11537
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.12-1_amd64.deb
+Size: 3890012
+MD5sum: cae23c064debeced3b3888760dda6cc7
+SHA1: cff55d7bff21298641e61526c64aa63a010f767d
+SHA256: b2549c1ce27c0cb9450500c0ea7b5ca926bf113aab14fe7c48337e7f6a7ce809
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.13-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11537
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.13-1_amd64.deb
+Size: 3890680
+MD5sum: a4e9fd609cdbb527b0d6f1115aa31c9c
+SHA1: 5642fcbd067f931059e3a4b120e2a532d412079b
+SHA256: f8ea58424721c117a0c0338940b38f23e79ca8c476eb80b13ca40c05d65f4e65
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.14-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11537
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.14-1_amd64.deb
+Size: 3890192
+MD5sum: 8e2aea3d7f734179a1e51fb703bf8cdf
+SHA1: c84ab82c2d5ae63ddac05a28e66991afec477ac0
+SHA256: e1df99d12d711f6247547eb212f1e5ed1f18665f31815b327b295d2fe1eeed1b
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.15-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11537
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.15-1_amd64.deb
+Size: 3891512
+MD5sum: ccf20c82de0db27c00179895c556a1c9
+SHA1: 7d96658317fe602fc45269fe16d2af56910e9e4f
+SHA256: ef094b8fff39eb696ef6eddf5115eb8423e5db321f9d1add602763b98003850b
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11538
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.4-1_amd64.deb
+Size: 3891060
+MD5sum: c5f2be35d3ebecf809a94b4087aa745d
+SHA1: 5df8f5d2d38643a9ba298fad05e31921e1f91a92
+SHA256: ef52eeca58739ace4349349088e8ec9351fb3bc0fb3a134fe6e4462af8620f45
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11538
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.5-1_amd64.deb
+Size: 3890672
+MD5sum: 00bb8d1e1fba1adeaa57a1d93906d2ef
+SHA1: 7ce4f32bd41e48f8e69074f4f895ede5a4b2f086
+SHA256: fd2b8295cef679d4f645ecd2850a84c0b447def9c25415062d65f92eeccafa89
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11538
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.6-1_amd64.deb
+Size: 3890540
+MD5sum: 235ba9ba5ea66754d9415d629ccc9f9c
+SHA1: aff53b4bce5e127d79da05fd5bc0264020dd5405
+SHA256: 0dcb27460c2d10dac5a206bcc73919499a700036aa707bc981e30f7cad6f7272
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.7-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11538
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.7-1_amd64.deb
+Size: 3891280
+MD5sum: 2662ecb77c67d4aed8df7d0dd5f590b3
+SHA1: 6dfc409f428b97de544fead0d931efe33f7f9b04
+SHA256: 6c2d74787050842b907838cd339dc947e45b2d9a3ba31abdc9022a5bd7ba6d0f
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.8-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11538
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.8-1_amd64.deb
+Size: 3890268
+MD5sum: e7ee08bfb4bc9b667d5e82bcc63b9ff0
+SHA1: 51c786dddb4186bc967768a723a93b9f9224fcf5
+SHA256: eb069f1d996b49fc777c332683850aaa5821d401957d7f30e80656c4e185911f
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.1.9-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11538
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.1.9-1_amd64.deb
+Size: 3891108
+MD5sum: a0ab9ff73ee79166da9a52c0cf603ec6
+SHA1: 10245fd8cd6894741c181353fc534ed67cf3a028
+SHA256: f2cf3192ecb2eb7412af5141a5e6bdcbc0884a2a370653882f8067ecb7244c59
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.0-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11623
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.0-1_amd64.deb
+Size: 3913748
+MD5sum: 9eb56589fff0c82a07c324ebf024924f
+SHA1: 54319484ea8e303e6314ac571235ac09fbcb4117
+SHA256: 9460bf3053be7f2211e8a2060e3903ad5d816bf9a7556cbdaf7932408573fe51
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.1-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11624
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.1-1_amd64.deb
+Size: 3913188
+MD5sum: b94c8c4d57a693067a95e74932a5b8d3
+SHA1: 971ad181aabb2a1475fc6f4cf06ae454cb06b8c0
+SHA256: 4c8d8a61a2a6a744333b7c8cdd415cdd3706af5b710db2381ec3cb3b61daae07
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11638
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.2-1_amd64.deb
+Size: 3918776
+MD5sum: 8fd09453d9d4eb591fe0c410f64f9311
+SHA1: d98f0c4e6a93186dfd1d1710fd4a7cf41eed9e69
+SHA256: d305d5dff18269aff193cb1c22656cec9209f5be5f98a5c4d82d5c6001c7780c
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11638
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.3-1_amd64.deb
+Size: 3919008
+MD5sum: e22e1b7fd983809234906f4cc38159b0
+SHA1: 4e489f5845c6f11d88cd072e2a40ee07e8265249
+SHA256: 0fee8e8ec602f1d95482f2b776c1de7db1f9e9991acd5c0fdb41757fdc311937
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11638
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.4-1_amd64.deb
+Size: 3918656
+MD5sum: a6b7e37cbbd4bdd63523467d7ff14496
+SHA1: 9836c0a461f258775aca04b70e996bfc9b75992b
+SHA256: 0ff7644d177cf6259123f3527b9775042f106300333c69ad6aec111e0850e35f
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11638
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.5-1_amd64.deb
+Size: 3918512
+MD5sum: 1850c6b812e4d4e7f8abbf92880c41e5
+SHA1: 42d090041296ec8c3c5168676efae1883e5ee68b
+SHA256: a05ab1315e5194153993db9fcfe3832e9016e60cb0e6ce0cc2955221df80f7ca
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11638
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.6-1_amd64.deb
+Size: 3918100
+MD5sum: ffe3bc2ca8a99d4e6793f69250efdba1
+SHA1: ec1b57b7e59340fa7ab819b3136c7867149ed52b
+SHA256: c613cfdaa9b54aaee3b1444fb65c2a4d62ab426da09e4c210c39b60012535818
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.7-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11638
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.7-1_amd64.deb
+Size: 3919580
+MD5sum: d92bf23dd108fdcbb1c94668f70a5d2a
+SHA1: 56aef2140f331be84ff205aad7a54a8724e85dde
+SHA256: e98bacf95675d0b876865c5d50a68545b911a071b94ea2aa94c72325f30a05f0
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.8-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11646
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.8-1_amd64.deb
+Size: 3921660
+MD5sum: fdbe0620fbc9813818df54c22e18cf29
+SHA1: 588578cc306fcd5fe2bc4c420df7bb6a000d2060
+SHA256: a49b106a2c345b42c9fbc02e207348a4affdae725d502df169d25fc413009aab
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.2.9-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11646
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.2.9-1_amd64.deb
+Size: 3921212
+MD5sum: c7f4cf87832656ac4f67cf3ca2e387a1
+SHA1: 14d49c0971e0833dcc970faf43a56be75d529fdd
+SHA256: 71cc633bb9f7a4caca2a5ff179b406c8086afdaeb0c836deb7ad2a922a46d4c2
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.3.1-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11646
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.3.1-1_amd64.deb
+Size: 3920868
+MD5sum: ddc53e03a7730fee924dfb0b9b87be68
+SHA1: 5df18725ed99714da6a30275b90f9d6b7c4a1e20
+SHA256: 0bbe33bec5dc013b436887cf5ff5fb307da78004b17643f8cf44ccbf3ccadc62
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.3.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11646
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.3.2-1_amd64.deb
+Size: 3920840
+MD5sum: 90492a4d4295fd1702223eb06e5164e5
+SHA1: 9d5b78447540ec3972727fcca509f8b6bc94a1d0
+SHA256: 5964f27bc4e533ba21d332ff620e359c50783d99e450a807fc39d46d0e630edb
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.3.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11646
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.3.3-1_amd64.deb
+Size: 3921836
+MD5sum: b8993870c5f0a084a78a458034ef5e88
+SHA1: de040e00f9680eff87de331ce285c4a5c2019f92
+SHA256: 7940772932187e6b93963b24706d0a4afbf326c02674602c7da23dee007a9f63
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
+Version: 0.3.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 11646
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.3.4-1_amd64.deb
+Size: 3921320
+MD5sum: f4c18bd2a96045bc0a8cd4db714347e6
+SHA1: 59c7592139ed584b299102b0bd5b097a6e702147
+SHA256: 916de033751b1996f522475176ae5977c30cf44ab54a103cc1d3439333cf79e1
+Section: utils
+Priority: optional
+Homepage: https://github.com/local76/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-cli
+Version: 0.2.0-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1314
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.0-1_amd64.deb
+Size: 483800
+MD5sum: d6e9c0afd911fea519c5762f157236f3
+SHA1: 8e1f342868cdcf267661ffeb64a0f08e1cc1ff43
+SHA256: f911cbed5441d64093aa5d848d45042d28fc6f3e614f87ed1569691b5f9db820
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.2.1-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1314
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.1-1_amd64.deb
+Size: 483800
+MD5sum: 44e527c58daf80edfa895774a3147d8f
+SHA1: 16eda2ee2dabec4f0e123e3c95582ec35da5482f
+SHA256: 2db706804cc115dbbed3a024e0ecfc06cd20b909e1ee222799118ceae7b9f444
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1325
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.2-1_amd64.deb
+Size: 486900
+MD5sum: f07a6b7fd86498ee771d164ff3acf7ad
+SHA1: fe418554600e19c1b1862b2acfa123086fa464c6
+SHA256: 5d123516056754598e99945b1dfb980f882ee69c969f9c8541ca718489c7c469
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1325
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.3-1_amd64.deb
+Size: 486772
+MD5sum: ad61d7526d22c29cc5f452452858ebbc
+SHA1: 956bf19891eacc942dba4a465320e986e86d9767
+SHA256: fc3c58c2947bd661346e73e23999aa8946a079b89a1e58f2c033f9c2222cb4f0
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1325
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.4-1_amd64.deb
+Size: 486828
+MD5sum: d60e74f026a6dead1f96f32e9b149b4b
+SHA1: 8eec0425ca057fb3f939f9f3869d352d62eb81e7
+SHA256: eed90b744c033cb51f474f672929f570cd85a0ab62677e9dc694c485fc07bd41
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1325
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.5-1_amd64.deb
+Size: 486764
+MD5sum: 1b6ecd34980baec9e9063077d5aba4d2
+SHA1: 33e0c1bf0ffe2c6458267001ca744db52c86a326
+SHA256: cd40e1dde8978579ad3a98cd52d82de21f3730e4640f1519bbe4390207afaf45
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1364
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.6-1_amd64.deb
+Size: 501064
+MD5sum: 495a26dcad47c1615202288c0e554de0
+SHA1: f3c1455c4306dab121adba04dbf5e66cf462ee93
+SHA256: 8d06e5d48432549a2d68bbf407added7c149609eb38e50c24ea3cf9cf7222847
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.2.7-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1364
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.7-1_amd64.deb
+Size: 501316
+MD5sum: dd976c10cfb770b2a75d16bdc926a532
+SHA1: d203d0545013cc5fc402f25141eea645c195ae12
+SHA256: 41d10de79ce4a01929d32a65c20fee3f8be0c75f9ba3b32c3f22aca7982d14c6
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.2.8-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1367
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.8-1_amd64.deb
+Size: 501616
+MD5sum: ee3db4567653d6e1a4e4a7b7618f272e
+SHA1: 34ed4de0c8cc6c8a524f3237a4ae74e2bddaebd2
+SHA256: 55ebdc80b75e7a747975274426ffcf4bd23114a7c877f3f3dc7fc12e7a14467c
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.2.9-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1367
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.2.9-1_amd64.deb
+Size: 501588
+MD5sum: dc91fd54f5f5b4bc2a6648374c48eac8
+SHA1: 9ed78f9e95b19d87e485f870863a9e6f982140e4
+SHA256: e58044396caca3a8d088d4478aad711a71bb4d38826d84e28896c4eef914e36e
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.3.1-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1367
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.3.1-1_amd64.deb
+Size: 501564
+MD5sum: 682544b610ea10d0082df7c6354cd24c
+SHA1: 6855d03b6f4144e098f63d2846449aa802478a36
+SHA256: 0dda7f409b0a5f904d34cb5ddd43f69e4b686618b28d2099353c73ddb4737a0d
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.3.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1367
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.3.2-1_amd64.deb
+Size: 501628
+MD5sum: d01d84212c5129aff1b06229eb18a26f
+SHA1: 8bb3ceb28409fd3264c848f34a1e456b52f7c821
+SHA256: 8a3d928392a8b9bbc5d2f9a8308b2393798eead64c327b7224120e0b50d244cf
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.3.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1367
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.3.3-1_amd64.deb
+Size: 501600
+MD5sum: f7d17cac90d95781614540035a5ea2d7
+SHA1: 60cad7cdc0e938ec4ec590524acd24ec9e212625
+SHA256: 2706124e34562ba122a319d0e69ad0525b4921d4b94f5e8a910a4389aa827007
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.3.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1367
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.3.4-1_amd64.deb
+Size: 501696
+MD5sum: 324aed5d2a0f4bbbed8d21e7438e6ccf
+SHA1: 6fec5e6af15a4421bdbb42594f97d8116cb37b77
+SHA256: ecbb6fc8e68be6ee4a1df61845dd74f49833d339515400440cda42b1e5ce1f8e
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-plugin-beams
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 325
+Depends: libc6
+Filename: pool/main/trance-plugin-beams_0.2.2-1_amd64.deb
+Size: 151360
+MD5sum: e0c9bb188d14c6269ca1e874b7828183
+SHA1: 2c25abbcc522cc08539d6f21333828daa4a5275c
+SHA256: 8f744a885eba4744b771ae2bf77f097aa6e4f898915d815a2eb4703fd2f2dec7
+Section: utils
+Priority: optional
+Description: beams - retro terminal screensaver effect
+ Screensaver effect (beams) part of the screensavers collection.
+
+Package: trance-plugin-beams
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 325
+Depends: libc6
+Filename: pool/main/trance-plugin-beams_0.2.3-1_amd64.deb
+Size: 151380
+MD5sum: 9f03e157c10fa72371ea96e072e07fa1
+SHA1: 65d9fd5b5e9f26f967394d7348712325d5909c72
+SHA256: d5283f37de00edebcde647cf887d039d2def4f33ebfe255b48d507406e3364f7
+Section: utils
+Priority: optional
+Description: beams - retro terminal screensaver effect
+ Screensaver effect (beams) part of the screensavers collection.
+
+Package: trance-plugin-beams
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 325
+Depends: libc6
+Filename: pool/main/trance-plugin-beams_0.2.4-1_amd64.deb
+Size: 151396
+MD5sum: 168d8a755d034b677849b3ee8f8cf51d
+SHA1: 6012941f37b4d20bd42142072db7e0de62ca210f
+SHA256: 17393fcb7c7ac40aa149436d09d86921ad540e0d98004b2f4237cc1c66bf58b5
+Section: utils
+Priority: optional
+Description: beams - retro terminal screensaver effect
+ Screensaver effect (beams) part of the screensavers collection.
+
+Package: trance-plugin-beams
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 325
+Depends: libc6
+Filename: pool/main/trance-plugin-beams_0.2.5-1_amd64.deb
+Size: 151412
+MD5sum: 88959fea812a56da0319a997858950a5
+SHA1: 757a8bd7ce6bd1eb0cfd2e7502e4a621e62c3de4
+SHA256: a952fdff1de5fa7be649f3c6bf91bcf6321c90849ad636d0c9a04d6f59e0b285
+Section: utils
+Priority: optional
+Description: beams - retro terminal screensaver effect
+ Screensaver effect (beams) part of the screensavers collection.
+
+Package: trance-plugin-beams
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 327
+Depends: libc6
+Filename: pool/main/trance-plugin-beams_0.2.6-1_amd64.deb
+Size: 151944
+MD5sum: b29ace84654fbb5f126d72ca8dce1141
+SHA1: f24ac51209ec6772fa992ce95cb452efcbe24977
+SHA256: 312e9f4d891a531ee37694ddbfea28d7552ccb01bfbfe993104cf63598b11aaa
+Section: utils
+Priority: optional
+Description: beams - retro terminal screensaver effect
+ Screensaver effect (beams) part of the screensavers collection.
+
+Package: trance-plugin-bursts
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 344
+Depends: libc6
+Filename: pool/main/trance-plugin-bursts_0.2.2-1_amd64.deb
+Size: 168400
+MD5sum: e8ea0c22f16ed7ae90064901db581d9f
+SHA1: 13890d4c3f6dfb0743b75d5ba4892f2e41d54322
+SHA256: cf448a3363f2eae02134978cc2901afff30f659084a0cb958ceb7585a6720617
+Section: utils
+Priority: optional
+Description: bursts - retro terminal screensaver effect
+ Screensaver effect (bursts) part of the screensavers collection.
+
+Package: trance-plugin-bursts
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 344
+Depends: libc6
+Filename: pool/main/trance-plugin-bursts_0.2.3-1_amd64.deb
+Size: 168376
+MD5sum: 0c67fabad464d58fb6f0f8fe637f5f01
+SHA1: 9ac436803fb629b0f471fa01ed76de0a29663524
+SHA256: dfe6c571f229d1627a7fbb581e3bd9a3176229b26b89503f04f012d67e1a630e
+Section: utils
+Priority: optional
+Description: bursts - retro terminal screensaver effect
+ Screensaver effect (bursts) part of the screensavers collection.
+
+Package: trance-plugin-bursts
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 344
+Depends: libc6
+Filename: pool/main/trance-plugin-bursts_0.2.4-1_amd64.deb
+Size: 168412
+MD5sum: 5c7b5597d053d8aea9cd6ac8743d57ba
+SHA1: d6f10e8d301ec950835f99626f3afb40fa8523ea
+SHA256: 2bc5ade899f68052726df0d4cc4c3c5c9060453fb21f2bfa5823eb0c55a8364a
+Section: utils
+Priority: optional
+Description: bursts - retro terminal screensaver effect
+ Screensaver effect (bursts) part of the screensavers collection.
+
+Package: trance-plugin-bursts
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 344
+Depends: libc6
+Filename: pool/main/trance-plugin-bursts_0.2.5-1_amd64.deb
+Size: 168412
+MD5sum: 821108fb36cfac29ae9c3af45a482c9a
+SHA1: 28fc260684a140c982df9e46cd888096e964287c
+SHA256: d8e29e864af67c2b3886e43f1341045d97fc18b0a27615dc6618d725d0889347
+Section: utils
+Priority: optional
+Description: bursts - retro terminal screensaver effect
+ Screensaver effect (bursts) part of the screensavers collection.
+
+Package: trance-plugin-bursts
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 344
+Depends: libc6
+Filename: pool/main/trance-plugin-bursts_0.2.6-1_amd64.deb
+Size: 168420
+MD5sum: eea1985852f0c7ccde1e0c2fa7752245
+SHA1: 573794da0736774c6c01640ccff560546bc6b62a
+SHA256: 4d8f2bab10b7847e0b7d0b782e60c2d0c0798b8cde00c0697324a6df28b679d1
+Section: utils
+Priority: optional
+Description: bursts - retro terminal screensaver effect
+ Screensaver effect (bursts) part of the screensavers collection.
+
+Package: trance-plugin-chaos
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 331
+Depends: libc6
+Filename: pool/main/trance-plugin-chaos_0.2.2-1_amd64.deb
+Size: 155644
+MD5sum: 2371845a1e86868a64197d41aac499e5
+SHA1: 0847e5dc8ef6a41e48cfb0473bb87ca01586186d
+SHA256: dfdece8eb665f72c5fa76978bd7f2a72170ebf70371242b1924a1791aa0752ba
+Section: utils
+Priority: optional
+Description: chaos - retro terminal screensaver effect
+ Screensaver effect (chaos) part of the screensavers collection.
+
+Package: trance-plugin-chaos
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 331
+Depends: libc6
+Filename: pool/main/trance-plugin-chaos_0.2.3-1_amd64.deb
+Size: 155604
+MD5sum: ea23f8cee65b2c5b24252e7d32dfbc4e
+SHA1: 213f3a887e5839d482b7739dd7681641161260f4
+SHA256: e086a08ee9e7bee984aa3d5170db790f5b1ababcd8e88148213732f818ed23f3
+Section: utils
+Priority: optional
+Description: chaos - retro terminal screensaver effect
+ Screensaver effect (chaos) part of the screensavers collection.
+
+Package: trance-plugin-chaos
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 331
+Depends: libc6
+Filename: pool/main/trance-plugin-chaos_0.2.4-1_amd64.deb
+Size: 155644
+MD5sum: 6117fd268451cb0ddb1c4298d8ad403d
+SHA1: d92eec8cd167c738b630851a4f29004caff7bd2a
+SHA256: 9bb5e21cf06658c7bdd55709fed7c73dafee3c0bc122d45c1030c72f834292ed
+Section: utils
+Priority: optional
+Description: chaos - retro terminal screensaver effect
+ Screensaver effect (chaos) part of the screensavers collection.
+
+Package: trance-plugin-chaos
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 331
+Depends: libc6
+Filename: pool/main/trance-plugin-chaos_0.2.5-1_amd64.deb
+Size: 155604
+MD5sum: 2f5cbfc77856aba4bae95807a066054b
+SHA1: 0902d2c6bb5e5f8e255db53d5e75697eb755e453
+SHA256: 9e3a727967f3c76a1df360b922cfc290cc64d8be148e04cc9deeb9870b4641e1
+Section: utils
+Priority: optional
+Description: chaos - retro terminal screensaver effect
+ Screensaver effect (chaos) part of the screensavers collection.
+
+Package: trance-plugin-chaos
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 331
+Depends: libc6
+Filename: pool/main/trance-plugin-chaos_0.2.6-1_amd64.deb
+Size: 155648
+MD5sum: adf05ce1ad341f52aee3aa8bc5742f25
+SHA1: 2afcc44188a9cc418d5d6f93e1881d76b03f2f1e
+SHA256: 95ad5e745a67441247518b28287b67658e8ed7ff016f59e224d4cd1b7e2d4911
+Section: utils
+Priority: optional
+Description: chaos - retro terminal screensaver effect
+ Screensaver effect (chaos) part of the screensavers collection.
+
+Package: trance-plugin-cosmos
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 348
+Depends: libc6
+Filename: pool/main/trance-plugin-cosmos_0.2.2-1_amd64.deb
+Size: 160416
+MD5sum: 765889e09c1094cd90597aa8de0242e3
+SHA1: 1e9a9eff444239ecea1d74fa79ce782a344a0a4c
+SHA256: a1b4f9c3eb5e064ce1649ee2263088ca1770e7705a2566b47ec7189f4a056ef5
+Section: utils
+Priority: optional
+Description: cosmos - retro terminal screensaver effect
+ Screensaver effect (cosmos) part of the screensavers collection.
+
+Package: trance-plugin-cosmos
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 348
+Depends: libc6
+Filename: pool/main/trance-plugin-cosmos_0.2.3-1_amd64.deb
+Size: 160376
+MD5sum: dc5f94c71c0451b6bd395afccd2a32fc
+SHA1: 6d58448706a416f26616933783fd0a68d57e00ad
+SHA256: fb40806fb5062c998a4690b3b02e5722c0cbffe4dd7a625c6ec5a58d03f65fbc
+Section: utils
+Priority: optional
+Description: cosmos - retro terminal screensaver effect
+ Screensaver effect (cosmos) part of the screensavers collection.
+
+Package: trance-plugin-cosmos
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 348
+Depends: libc6
+Filename: pool/main/trance-plugin-cosmos_0.2.4-1_amd64.deb
+Size: 160432
+MD5sum: 06dcc1a807317efb1c5682245378aa21
+SHA1: b66faa280d8b8da64da85f8184ec69d1edfc9426
+SHA256: a753b70f0c256ab94eac34f3fff061b22c0d820aca801d86a0c25a8236c15739
+Section: utils
+Priority: optional
+Description: cosmos - retro terminal screensaver effect
+ Screensaver effect (cosmos) part of the screensavers collection.
+
+Package: trance-plugin-cosmos
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 348
+Depends: libc6
+Filename: pool/main/trance-plugin-cosmos_0.2.5-1_amd64.deb
+Size: 160424
+MD5sum: b6dd93bba145350eec6050d63292dc41
+SHA1: d2a18ab70226dae02ef419bcf187b527b7686e0c
+SHA256: 1100f92ac0989ab869bc22c278046aba2164461fb69628b4028897951fc522dc
+Section: utils
+Priority: optional
+Description: cosmos - retro terminal screensaver effect
+ Screensaver effect (cosmos) part of the screensavers collection.
+
+Package: trance-plugin-cosmos
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 348
+Depends: libc6
+Filename: pool/main/trance-plugin-cosmos_0.2.6-1_amd64.deb
+Size: 160400
+MD5sum: 8c22044cfe22f289a79daeabf79f1198
+SHA1: 26a9e569c58a0ad6d15dd45c3df9d57b3acd65f1
+SHA256: eb8f1bb0f8d7e54bae14db37f8a4b9f34ccb1477702046a73deace894a6b6dd4
+Section: utils
+Priority: optional
+Description: cosmos - retro terminal screensaver effect
+ Screensaver effect (cosmos) part of the screensavers collection.
+
+Package: trance-plugin-glyphs
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 312
+Depends: libc6
+Filename: pool/main/trance-plugin-glyphs_0.2.2-1_amd64.deb
+Size: 146296
+MD5sum: 6b2aa73e709149fce6b957e1e16349fc
+SHA1: 979380793d28e0c5ee1e6c2a17f698e950013fea
+SHA256: da8300aa7446597db51cc0f2d570db3161f8e16544d0c908930d5c9b6155975b
+Section: utils
+Priority: optional
+Description: glyphs - retro terminal screensaver effect
+ Screensaver effect (glyphs) part of the screensavers collection.
+
+Package: trance-plugin-glyphs
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 312
+Depends: libc6
+Filename: pool/main/trance-plugin-glyphs_0.2.3-1_amd64.deb
+Size: 146328
+MD5sum: adac9b43cdba91c273670cfa7e1924ae
+SHA1: d6f086d0d47a7453f690021e07ee74aba3013106
+SHA256: a6c3f641d52aceb1c29be44309a95a699d845d7408ec54c1b58bc530043795dd
+Section: utils
+Priority: optional
+Description: glyphs - retro terminal screensaver effect
+ Screensaver effect (glyphs) part of the screensavers collection.
+
+Package: trance-plugin-glyphs
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 312
+Depends: libc6
+Filename: pool/main/trance-plugin-glyphs_0.2.4-1_amd64.deb
+Size: 146316
+MD5sum: a74fa981fd1a0b603d3fbb88cfe94350
+SHA1: a245e0115e2a6efbc8b90b91243a96720d1e851c
+SHA256: 4000bf72d97a7694ec99c63a610c6f765a1d67549dadbaeb11e34a73a4a94ecb
+Section: utils
+Priority: optional
+Description: glyphs - retro terminal screensaver effect
+ Screensaver effect (glyphs) part of the screensavers collection.
+
+Package: trance-plugin-glyphs
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 312
+Depends: libc6
+Filename: pool/main/trance-plugin-glyphs_0.2.5-1_amd64.deb
+Size: 146324
+MD5sum: 4a62361be2181c82d176ccc138b1a037
+SHA1: 184a78dd0257270953c94e55fc6b2a1f0163a90f
+SHA256: 3d1e8a6b4b746d2dd605f195b8a0d5b27be55c3a57635ecf11f8a11eda9b07cd
+Section: utils
+Priority: optional
+Description: glyphs - retro terminal screensaver effect
+ Screensaver effect (glyphs) part of the screensavers collection.
+
+Package: trance-plugin-glyphs
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 312
+Depends: libc6
+Filename: pool/main/trance-plugin-glyphs_0.2.6-1_amd64.deb
+Size: 146308
+MD5sum: e20b7ce485a04c5c451990009c63a9da
+SHA1: 77d308e6fd1b0c1bfd35a8289c3daa0256e48755
+SHA256: 7f18319bb409e138787c7c7f3e5cbb933ead895161b7e99cdeca202a783a1d43
+Section: utils
+Priority: optional
+Description: glyphs - retro terminal screensaver effect
+ Screensaver effect (glyphs) part of the screensavers collection.
+
+Package: trance-plugin-gnats
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 340
+Depends: libc6
+Filename: pool/main/trance-plugin-gnats_0.2.2-1_amd64.deb
+Size: 166836
+MD5sum: 5465ea6727d39d8a24a2cfdfee26e690
+SHA1: ec5436831a5e8d446090b4193e92a9e1fc623ca8
+SHA256: 9dbaa0196a82917631731f7d9907f693e2ea1ab6e901db7d650e39cba08fc4ad
+Section: utils
+Priority: optional
+Description: gnats - retro terminal screensaver effect
+ Screensaver effect (gnats) part of the screensavers collection.
+
+Package: trance-plugin-gnats
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 340
+Depends: libc6
+Filename: pool/main/trance-plugin-gnats_0.2.3-1_amd64.deb
+Size: 166860
+MD5sum: e207e76e497d28e7fa9b83cfa5e39295
+SHA1: 6a31506fdfc9077c667902f3c46372214d1f1e73
+SHA256: 3eeb25eb20f0f5efc9bbf65a70e56be6b4cb2d62e248620580365416a5025d8b
+Section: utils
+Priority: optional
+Description: gnats - retro terminal screensaver effect
+ Screensaver effect (gnats) part of the screensavers collection.
+
+Package: trance-plugin-gnats
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 340
+Depends: libc6
+Filename: pool/main/trance-plugin-gnats_0.2.4-1_amd64.deb
+Size: 166800
+MD5sum: 2d7f4578e7568c51c659bf061723f8f8
+SHA1: 5c06c1aea8a26552bbdf169e21d54123695a2ef9
+SHA256: 4e9f5863ed206b7e2dd130a1751c07e15f874dfab9e503fdb90770e36a84e889
+Section: utils
+Priority: optional
+Description: gnats - retro terminal screensaver effect
+ Screensaver effect (gnats) part of the screensavers collection.
+
+Package: trance-plugin-gnats
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 340
+Depends: libc6
+Filename: pool/main/trance-plugin-gnats_0.2.5-1_amd64.deb
+Size: 166840
+MD5sum: eb05847ca0bef31347593cd809c3a38f
+SHA1: 2369a0ec7732792b78f0ea64a710ba1eb59c0343
+SHA256: 56a9f9990dd2a7b06edf131a2f5b1ff67df4a3f63139d71d31213affdfe854e7
+Section: utils
+Priority: optional
+Description: gnats - retro terminal screensaver effect
+ Screensaver effect (gnats) part of the screensavers collection.
+
+Package: trance-plugin-gnats
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 340
+Depends: libc6
+Filename: pool/main/trance-plugin-gnats_0.2.6-1_amd64.deb
+Size: 166852
+MD5sum: bf2e33146b45e9c574f381ecab9e5f66
+SHA1: bc1a3ee18c7cae927dba9fef24fa3937cffd2702
+SHA256: 609a6d28acbd3717bdf233f1297e4f18197cf34e149f9757497043e70ff4717c
+Section: utils
+Priority: optional
+Description: gnats - retro terminal screensaver effect
+ Screensaver effect (gnats) part of the screensavers collection.
+
+Package: trance-plugin-storm
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 364
+Depends: libc6
+Filename: pool/main/trance-plugin-storm_0.2.2-1_amd64.deb
+Size: 170052
+MD5sum: 73285211698f5ab687ea1ef9b581c223
+SHA1: 19dcb524e21ff516adef92eb1456e1a174315379
+SHA256: d418fcfce0b44992f1149b6c467e6f18d83fd4e692c689f9c06e02d671c92870
+Section: utils
+Priority: optional
+Description: storm - retro terminal screensaver effect
+ Screensaver effect (storm) part of the screensavers collection.
+
+Package: trance-plugin-storm
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 365
+Depends: libc6
+Filename: pool/main/trance-plugin-storm_0.2.3-1_amd64.deb
+Size: 170196
+MD5sum: 25e8a33ba8848fa380e6f135db60e966
+SHA1: 1605d40c7a425f827b51f8bfd79678cf823f60b1
+SHA256: a8770b217e622b5ce25d251b0c3b092ca374c1a2741724f6f50b8010ad8e88f1
+Section: utils
+Priority: optional
+Description: storm - retro terminal screensaver effect
+ Screensaver effect (storm) part of the screensavers collection.
+
+Package: trance-plugin-storm
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 365
+Depends: libc6
+Filename: pool/main/trance-plugin-storm_0.2.4-1_amd64.deb
+Size: 170108
+MD5sum: c84163dce32d4b04a4411348f69f066b
+SHA1: 0c2d0f16345f033068485425084c22d89f08e200
+SHA256: b53a293e54c0266223289ee704fbb4a00c7ac099cd79e6cdd8ef7fbee3182a3d
+Section: utils
+Priority: optional
+Description: storm - retro terminal screensaver effect
+ Screensaver effect (storm) part of the screensavers collection.
+
+Package: trance-plugin-storm
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 365
+Depends: libc6
+Filename: pool/main/trance-plugin-storm_0.2.5-1_amd64.deb
+Size: 170160
+MD5sum: d318509287c5618b30af4dfd7e812833
+SHA1: 1eb735bbf6b11db59bc895c27dd2722fc2efb0a1
+SHA256: a3f36e8c07e626a63e3dfd7fd60409ec6b96f231a790bcfd75dcefacb5adb32c
+Section: utils
+Priority: optional
+Description: storm - retro terminal screensaver effect
+ Screensaver effect (storm) part of the screensavers collection.
+
+Package: trance-plugin-storm
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 365
+Depends: libc6
+Filename: pool/main/trance-plugin-storm_0.2.6-1_amd64.deb
+Size: 170136
+MD5sum: 770e3155c59cd15d7c842ca3f9c455cc
+SHA1: 80603465dd0989847bc5806a13f7c2440fa1c012
+SHA256: 7c5db09503a7ca6ff19442f9100ccf7b58f2a2d76fc8cc44c1bc2d96efb0ff54
+Section: utils
+Priority: optional
+Description: storm - retro terminal screensaver effect
+ Screensaver effect (storm) part of the screensavers collection.
+
+Package: trance-plugins-all
+Version: 0.2.0-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.0-1_amd64.deb
+Size: 976
+MD5sum: 3702c44cbe6ffff4187fb6a7133c30ae
+SHA1: 8d169ce020cc92b211dc811caa6aab61683a0f5b
+SHA256: 1b1d8b5aaaca338e1f8e1adfee32a4624cf7c5092460145ebeca5ed2c9107023
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.2.1-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.1-1_amd64.deb
+Size: 976
+MD5sum: 3098cb43388345ba26e2c4866f9c9936
+SHA1: e4c7d746b92cc3cb4dc46ba801e74e73f350cea3
+SHA256: 45e3dbcd31c959df6be7a78d539b00e35c636d535c91a9589424cef7ea775cc3
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.2.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.2-1_amd64.deb
+Size: 976
+MD5sum: 22ee9aa30dd8293e5fd414b521f3000f
+SHA1: 4792929135df55df9e59cc1af7b0bf46b7cbc8ab
+SHA256: 77940d9af585c262f6db33ace06975a8fb5818b9a5ac8f959ebdb4ff352e9f97
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.2.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.3-1_amd64.deb
+Size: 976
+MD5sum: bf1707015bbe4524cac1fd01269cfab6
+SHA1: c47de212b0878cc6bc9ad595f4c0bec12b239503
+SHA256: fb1ee8e773e06ad77230aa5bbffc5b790940478e54810785091ef50e26ed336a
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.2.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.4-1_amd64.deb
+Size: 976
+MD5sum: 6423abe95494820e59d43966b02ff31e
+SHA1: 2c739837b0ae28f2459efa07365fd48ad3c24ea1
+SHA256: 963e6b57e7fc080958c09a511b1905162a36a61cc869d5825920e0daeb209464
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.2.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.5-1_amd64.deb
+Size: 976
+MD5sum: ae5332200427219c1127b7ddfb8d339a
+SHA1: 4e7de0f7a17b5feff6ea92e355026b7842a95146
+SHA256: bfd6fdd99db3d9f98ef389d07160098be8ec4cebe9cb4b3a02275e1ae9c977e6
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.2.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.6-1_amd64.deb
+Size: 976
+MD5sum: 8523791c8388978e147d3850047417c9
+SHA1: 3ed12550c85faeacc822f666f381f4a7f3bd506f
+SHA256: 18fa5c302d7630352bee1e07198033f57a206066b2a4dd7a92ed3bcf4407a447
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.2.7-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 2
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.7-1_amd64.deb
+Size: 976
+MD5sum: 25bb3f2e9f94ed3cbae35d2500e4e087
+SHA1: 65594e5566aee36d7dc75c080c50df19108e2e59
+SHA256: 99fe1e70dc49103a88ddd2ad7bd67ad16a2c47043baa6dc81593fb55a941dca8
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.2.8-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.8-1_amd64.deb
+Size: 1140
+MD5sum: d25f4f9cffb475a0be3ba3bd2bbd104c
+SHA1: 0f325ac35854097b597f1f2ebecb26660e370e99
+SHA256: d67bfe695d399ee21e02b8babea973ffc71c5e39884432767fb0006bd3474754
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.2.9-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.2.9-1_amd64.deb
+Size: 1156
+MD5sum: 7e96c9820c4593c69a9cf87010077564
+SHA1: 9127b73be07919215adfdd6692582e2fd0f53874
+SHA256: 5e45f05cf16465ff515c10bbb7244f92da4b1bd7a02b38886cdca77df90cc39c
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.3.1-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.3.1-1_amd64.deb
+Size: 1180
+MD5sum: 959138fa8bba7cc28537ef3029fb36d5
+SHA1: d71e64b40d64b08550424c1e6a7ff4fdf73311fa
+SHA256: 7e4314bb55860793404d6f8466ed0e64c6cd2124eaf62f117dd98e065684ff1b
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.3.2-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.3.2-1_amd64.deb
+Size: 1180
+MD5sum: a9cb3da3ac38545fe69ccdef43f88734
+SHA1: d5fb792ab446cb1e23bd2c21e7975a47f78f39d9
+SHA256: f787c9255b2c99126525e783d14c7af5649a3087e10d45156f362357e0b970fe
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.3.3-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.3.3-1_amd64.deb
+Size: 1240
+MD5sum: f31dec1aa9f0a981d82c00191f155b0a
+SHA1: d718aad58e1dbe9608ac074d51c230321d50351e
+SHA256: a6661a564ec9815abeccdc6a3a295c399e9b0be92fa0c2f96093f1f6e79571df
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.3.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 4
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.3.4-1_amd64.deb
+Size: 1304
+MD5sum: 6df22eef8688c5088288b0d943c27a62
+SHA1: b7ebd72c513d0f78726700dd002bcf1e1a1e97ae
+SHA256: a7ce74c96e77734a6560e5d734b6b8317931736ea21205f124724e381830e69e
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-tui
+Version: 0.1.10-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1181
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.10-1_amd64.deb
+Size: 772516
+MD5sum: 9e94f8f298ebe8ae2039827ea3626a94
+SHA1: d23804082b355306bc25acd5e3657081b0be7a30
+SHA256: 9971f6bc3101a2561360f4ac09aeedf75dfcc1f6233bdc90458c5c922fb74084
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.11-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1181
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.11-1_amd64.deb
+Size: 772372
+MD5sum: f70ae27965e76381130f2cde83d3a700
+SHA1: 80b8333f60483a5f3a923c5b296877c2e56b474c
+SHA256: 6141d75845e2c36f9e2602cc687c95b5e3a67cdb8c563fe66d5fa4d11ffb9def
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.12-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1278
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.12-1_amd64.deb
+Size: 811080
+MD5sum: 274caed3dfc9adee60e47e0c2f80efda
+SHA1: b549e03f582b98dbfceb4f6ffd299df6dc96ef5f
+SHA256: 155e9745289d44b0aa97501372e30c7e25ce21c7de7e3dc3fb71d758989fbdb8
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.13-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1278
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.13-1_amd64.deb
+Size: 811088
+MD5sum: af1334ba846267dda4a6978fd08e3ede
+SHA1: f423051af1950819c52fbc970284220b79ecd841
+SHA256: f0900f59a803722c4fd2bce0b395710df13b642deb896748af53d435ef6fa9fa
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.14-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1278
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.14-1_amd64.deb
+Size: 811028
+MD5sum: 4f38e1864691eabf4ffea6b4715e1488
+SHA1: 277911d674feda8221c8c14052124e04e3730bfd
+SHA256: 7581f0b77668858dbf70e6f808131c6b55b1ab2823797417107addee931219ec
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.15-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1278
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.15-1_amd64.deb
+Size: 810904
+MD5sum: c74e0b6f016b060b9ad560f8714276c7
+SHA1: 55ac59823c7c65f1873d778e7a078275fc107d51
+SHA256: 457a934b3ba0f0244d8b6b24891c51fffbcf0196f6952e30f8ec93384b22d455
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.4-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1181
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.4-1_amd64.deb
+Size: 772324
+MD5sum: b294e4716e0326d870c299deb9b22d92
+SHA1: 8bda2256b1497e594f7c22454a6b361bb3b9179f
+SHA256: f4c1367367e6916f702973705daef3d4d9e58d081c668510b7dda28291f6e62f
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.5-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1181
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.5-1_amd64.deb
+Size: 772428
+MD5sum: beb4fdf4e677a4ce3d6a9d8bd1d6cf0b
+SHA1: 8dcc1301a36cbc0eddfe729a574329aa3aaaa01d
+SHA256: a882ed63c807d9607b8dd12637eb7dbd066760056cf594d96b869ff2d7fee304
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.6-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1181
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.6-1_amd64.deb
+Size: 772380
+MD5sum: adbb1bdad993f9c73bfbf367adef4964
+SHA1: 8ce74af22919ccccc54dd25076db9ec27e4629f0
+SHA256: 1e2ecf605cfba967e34d3a5e3960c06fd43abbf325b7f266e015f0602f9e85e3
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.7-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1181
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.7-1_amd64.deb
+Size: 772304
+MD5sum: 84b9bbe2a4bbd5d6c54bbec98241e2ab
+SHA1: 667229f334ada4ae816b74374c621093f8e19fd1
+SHA256: ce03294b6cfecf1dcd2812f94768a94d02a6aee400a8e87ceffb567b8fa8ebf5
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.8-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1181
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.8-1_amd64.deb
+Size: 772248
+MD5sum: cb072ceda006667eda4df8f75dc34bd5
+SHA1: 8fe722a7f5353c6e405ce7036fcd3546b72f3ae9
+SHA256: f33a2f39f20d3ac2585335e36ecc788d627538a4396fd44a6b0859807acb8459
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
+Package: trance-tui
+Version: 0.1.9-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@local76.org>
+Installed-Size: 1181
+Depends: libc6, trance, xterm
+Filename: pool/main/trance-tui_0.1.9-1_amd64.deb
+Size: 772812
+MD5sum: 62c3818e1a87c815b294601a6e415525
+SHA1: 514397cf62962b308b90aaa077fed9589fce02f9
+SHA256: 39da16e7e9b785ec41f27f434b24cab89735eddd78410756af464939130ec60f
+Section: utils
+Priority: optional
+Description: Interactive TUI configuration manager for trance screensavers
+ Interactive TUI configuration manager and idle background daemon for trance
+ screensavers.
+
