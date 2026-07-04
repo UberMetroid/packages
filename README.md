@@ -25,6 +25,10 @@ sudo curl -fsSL https://ubermetroid.github.io/packages/rpm/ubermetroid.repo -o /
 sudo dnf check-update
 ```
 
+## Unraid Templates
+
+For Unraid server installations (such as `beam`, `todo`, or `grid`), please use the [unraid-templates](https://github.com/UberMetroid/unraid-templates) repository.
+
 ---
 
 *For repository maintenance, pruning, and indexing instructions, see the [Maintainer Guide](apt/MAINTAINER.md).*
