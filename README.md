@@ -1,12 +1,10 @@
 # UberMetroid Packages
 
-APT package repository for **UberMetroid** applications (such as `trance`).
+Package repository for **UberMetroid** applications (such as `trance`).
 
-## Installation Setup
+## Debian / Ubuntu / Pop!_OS Setup (APT)
 
-To register the repository and install packages:
-
-1. **Import the repository GPG key:**
+1. **Import the GPG key:**
    ```bash
    sudo mkdir -p /etc/apt/keyrings
    curl -fsSL https://ubermetroid.github.io/packages/apt/ubermetroid-key.gpg | sudo gpg --dearmor --yes -o /etc/apt/keyrings/ubermetroid-keyring.gpg
@@ -20,6 +18,24 @@ To register the repository and install packages:
 3. **Update the package index:**
    ```bash
    sudo apt update
+   ```
+
+## Fedora / RHEL / CentOS Setup (DNF)
+
+1. **Add the DNF repository configuration:**
+   Create `/etc/yum.repos.d/ubermetroid.repo` with the following contents:
+   ```ini
+   [ubermetroid]
+   name=UberMetroid RPM Repository
+   baseurl=https://ubermetroid.github.io/packages/rpm
+   enabled=1
+   gpgcheck=1
+   gpgkey=https://ubermetroid.github.io/packages/rpm/ubermetroid-key.gpg
+   ```
+
+2. **Update the package database:**
+   ```bash
+   sudo dnf check-update
    ```
 
 ---
