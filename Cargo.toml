@@ -1,0 +1,15 @@
+[package]
+name = "ubermetroid-packages"
+version = "3.1.0"
+edition = "2024"
+description = "Repository maintenance tools for UberMetroid package distribution"
+
+[[bin]]
+name = "update"
+path = "src/update.rs"
+
+[[bin]]
+name = "prune"
+path = "src/prune.rs"
+
+[dependencies]
