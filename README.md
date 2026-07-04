@@ -27,4 +27,4 @@ sudo dnf check-update
 
 ## Unraid Templates
 
-For Unraid server installations (such as `beam`, `todo`, or `grid`), please use the [unraid-templates](https://github.com/UberMetroid/unraid-templates) repository.
+For Unraid server installations, please use the [unraid-templates](https://github.com/UberMetroid/unraid-templates) repository.
