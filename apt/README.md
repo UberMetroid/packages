@@ -9,21 +9,6 @@ Supported formats:
 
 ## Client Installation & Setup
 
-### 1. Automated Installation (Recommended)
-You can configure the GPG key, register the repository, and update your packages list in a single command:
-```bash
-curl -fsSL https://ubermetroid.github.io/packages/apt/install.sh | sudo bash
-```
-Once complete, you can install your desired software:
-```bash
-sudo apt install trance
-```
-
----
-
-### 2. Manual Installation
-If you prefer to perform the setup steps manually:
-
 1.  **Import the repository GPG key:**
     ```bash
     sudo mkdir -p /etc/apt/keyrings

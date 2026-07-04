@@ -4,7 +4,6 @@ This repository serves as the central distribution hub for the **UberMetroid** e
 
 Supported formats:
 *   **APT** (Debian, Ubuntu, Pop!_OS) — hosted under `/apt` and served via GitHub Pages
-*   **Nix Flakes** (NixOS, Unraid Nix Plugin) — defined at the root (`flake.nix`)
 
 ---
 
@@ -12,13 +11,25 @@ Supported formats:
 
 To install compiled Debian packages (such as `trance`):
 
-### Automated Installation (Recommended)
-```bash
-curl -fsSL https://ubermetroid.github.io/packages/apt/install.sh | sudo bash
-sudo apt install trance
-```
+### Installation Setup
+To add the repository and install packages:
 
-For manual installation instructions and GPG keyring details, see the [APT Readme](apt/README.md).
+1. **Import the repository GPG key:**
+   ```bash
+   sudo mkdir -p /etc/apt/keyrings
+   curl -fsSL https://ubermetroid.github.io/packages/apt/ubermetroid-key.gpg | sudo gpg --dearmor --yes -o /etc/apt/keyrings/ubermetroid-keyring.gpg
+   ```
+
+2. **Add the repository entry:**
+   ```bash
+   echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/ubermetroid-keyring.gpg] https://ubermetroid.github.io/packages/apt stable main" | sudo tee /etc/apt/sources.list.d/ubermetroid.list
+   ```
+
+3. **Update and install packages:**
+   ```bash
+   sudo apt update
+   sudo apt install trance
+   ```
 
 ### Repository maintenance
 
@@ -33,23 +44,3 @@ package:
 ```
 
 After pruning, regenerate the APT index (see `apt/MAINTAINER.md`).
-
----
-
-## 2. NixOS / Unraid Nix Setup (Flakes)
-
-> **Note:** the Nix flake at the root of this repo is currently a
-> **placeholder**. It exports `pkgs.hello` as `default` and does not yet
-> provide the per-application overlays that `nix run` and flake inputs
-> would require. Tracking the implementation is a portfolio-level TODO.
->
-> Until the flake is implemented, install UberMetroid apps via Nix by
-> pulling each application's own flake directly:
->
-> ```bash
-> nix run github:UberMetroid/trance
-> nix run github:UberMetroid/beam
-> ```
->
-> The Unraid Nix plugin (`github:UberMetroid/unraid-nix`) does not
-> currently consume this repo's flake.
