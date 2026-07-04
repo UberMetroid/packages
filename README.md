@@ -4,40 +4,26 @@ Package repository for **UberMetroid** applications (such as `trance`).
 
 ## Debian / Ubuntu / Pop!_OS Setup (APT)
 
-1. **Import the GPG key:**
-   ```bash
-   sudo mkdir -p /etc/apt/keyrings
-   curl -fsSL https://ubermetroid.github.io/packages/apt/ubermetroid-key.gpg | sudo gpg --dearmor --yes -o /etc/apt/keyrings/ubermetroid-keyring.gpg
-   ```
+```bash
+# 1. Download the repository GPG keyring
+sudo curl -fsSL https://ubermetroid.github.io/packages/apt/ubermetroid-keyring.gpg -o /etc/apt/trusted.gpg.d/ubermetroid.gpg
 
-2. **Register the APT source:**
-   ```bash
-   echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/ubermetroid-keyring.gpg] https://ubermetroid.github.io/packages/apt stable main" | sudo tee /etc/apt/sources.list.d/ubermetroid.list
-   ```
+# 2. Download the sources list configuration
+sudo curl -fsSL https://ubermetroid.github.io/packages/apt/ubermetroid.list -o /etc/apt/sources.list.d/ubermetroid.list
 
-3. **Update the package index:**
-   ```bash
-   sudo apt update
-   ```
+# 3. Refresh the package index
+sudo apt update
+```
 
 ## Fedora / RHEL / CentOS Setup (DNF)
 
-1. **Add the DNF repository configuration:**
-   ```bash
-   sudo tee /etc/yum.repos.d/ubermetroid.repo << 'EOF'
-[ubermetroid]
-name=UberMetroid RPM Repository
-baseurl=https://ubermetroid.github.io/packages/rpm
-enabled=1
-gpgcheck=1
-gpgkey=https://ubermetroid.github.io/packages/rpm/ubermetroid-key.gpg
-EOF
-   ```
+```bash
+# 1. Download the repository configuration
+sudo curl -fsSL https://ubermetroid.github.io/packages/rpm/ubermetroid.repo -o /etc/yum.repos.d/ubermetroid.repo
 
-2. **Update the package database:**
-   ```bash
-   sudo dnf check-update
-   ```
+# 2. Refresh the package database
+sudo dnf check-update
+```
 
 ---
 

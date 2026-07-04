@@ -11,6 +11,9 @@ echo "=========================================="
 echo "Updating APT repository..."
 echo "=========================================="
 
+echo "Regenerating binary GPG keyring..."
+gpg --dearmor < "$REPO_ROOT/apt/ubermetroid-key.gpg" > "$REPO_ROOT/apt/ubermetroid-keyring.gpg"
+
 echo "Compiling APT indexer..."
 rustc "$REPO_ROOT/apt/update.rs" -o "$REPO_ROOT/apt/update"
 

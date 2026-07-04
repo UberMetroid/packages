@@ -9,19 +9,10 @@ Supported formats:
 
 ## Client Installation & Setup
 
-1.  **Configure the DNF repository:**
-    ```bash
-    sudo tee /etc/yum.repos.d/ubermetroid.repo << 'EOF'
-[ubermetroid]
-name=UberMetroid RPM Repository
-baseurl=https://ubermetroid.github.io/packages/rpm
-enabled=1
-gpgcheck=1
-gpgkey=https://ubermetroid.github.io/packages/rpm/ubermetroid-key.gpg
-EOF
-    ```
+```bash
+# 1. Download the repository configuration
+sudo curl -fsSL https://ubermetroid.github.io/packages/rpm/ubermetroid.repo -o /etc/yum.repos.d/ubermetroid.repo
 
-2.  **Update the package database:**
-    ```bash
-    sudo dnf check-update
-    ```
+# 2. Refresh the package database
+sudo dnf check-update
+```

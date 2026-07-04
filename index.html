@@ -296,17 +296,17 @@
             <div class="section-title">APT Repository Setup</div>
             <div class="steps">
                 <div class="step-item">
-                    <div class="step-label">Step 1: Import Repository GPG Key</div>
+                    <div class="step-label">Step 1: Download GPG Keyring</div>
                     <div class="installer-box">
-                        <div class="command" id="apt1Cmd">sudo mkdir -p /etc/apt/keyrings && curl -fsSL https://ubermetroid.github.io/packages/apt/ubermetroid-key.gpg | sudo gpg --dearmor --yes -o /etc/apt/keyrings/ubermetroid-keyring.gpg</div>
+                        <div class="command" id="apt1Cmd">sudo curl -fsSL https://ubermetroid.github.io/packages/apt/ubermetroid-keyring.gpg -o /etc/apt/trusted.gpg.d/ubermetroid.gpg</div>
                         <button class="copy-btn" onclick="copyCommand('apt1Cmd', this)">Copy</button>
                     </div>
                 </div>
 
                 <div class="step-item">
-                    <div class="step-label">Step 2: Add Repository Source</div>
+                    <div class="step-label">Step 2: Download Repository Source List</div>
                     <div class="installer-box">
-                        <div class="command" id="apt2Cmd">echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/ubermetroid-keyring.gpg] https://ubermetroid.github.io/packages/apt stable main" | sudo tee /etc/apt/sources.list.d/ubermetroid.list</div>
+                        <div class="command" id="apt2Cmd">sudo curl -fsSL https://ubermetroid.github.io/packages/apt/ubermetroid.list -o /etc/apt/sources.list.d/ubermetroid.list</div>
                         <button class="copy-btn" onclick="copyCommand('apt2Cmd', this)">Copy</button>
                     </div>
                 </div>
@@ -326,17 +326,10 @@
             <div class="section-title">DNF Repository Setup</div>
             <div class="steps">
                 <div class="step-item">
-                    <div class="step-label">Step 1: Add Repository Configuration</div>
-                    <div class="installer-box" style="padding: 1.25rem 1.5rem; align-items: flex-start; flex-direction: column;">
-                        <pre class="command" id="dnf1Cmd" style="white-space: pre-wrap; font-size: 0.85rem; line-height: 1.5; width: 100%;">sudo tee /etc/yum.repos.d/ubermetroid.repo << 'EOF'
-[ubermetroid]
-name=UberMetroid RPM Repository
-baseurl=https://ubermetroid.github.io/packages/rpm
-enabled=1
-gpgcheck=1
-gpgkey=https://ubermetroid.github.io/packages/rpm/ubermetroid-key.gpg
-EOF</pre>
-                        <button class="copy-btn" onclick="copyCommand('dnf1Cmd', this)" style="margin-top: 0.75rem; align-self: flex-end;">Copy Command</button>
+                    <div class="step-label">Step 1: Download Repository Configuration</div>
+                    <div class="installer-box">
+                        <div class="command" id="dnf1Cmd">sudo curl -fsSL https://ubermetroid.github.io/packages/rpm/ubermetroid.repo -o /etc/yum.repos.d/ubermetroid.repo</div>
+                        <button class="copy-btn" onclick="copyCommand('dnf1Cmd', this)">Copy</button>
                     </div>
                 </div>
 

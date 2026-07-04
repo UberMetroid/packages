@@ -1,0 +1,6 @@
+[ubermetroid]
+name=UberMetroid RPM Repository
+baseurl=https://ubermetroid.github.io/packages/rpm
+enabled=1
+gpgcheck=1
+gpgkey=https://ubermetroid.github.io/packages/rpm/ubermetroid-key.gpg
