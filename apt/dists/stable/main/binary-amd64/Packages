@@ -1265,10 +1265,10 @@ Maintainer: Screensavers Developer <dev@local76.org>
 Installed-Size: 325
 Depends: libc6
 Filename: pool/main/trance-plugin-beams_0.2.6-1_amd64.deb
-Size: 151436
-MD5sum: e234852147eb105d1c19c3b2efe271e1
-SHA1: 29a006f06db94826bcd330372eb83fafaf6b47db
-SHA256: e1db47f132005bc334fbcb81ae2f0e6a68b5894d9dc3923093dec6b9158575a3
+Size: 151456
+MD5sum: 4338ec03a3f40c79923546d6f921aace
+SHA1: 5be94a9b30a22d306936e07da781ec3f87521c98
+SHA256: 6f14394d0feecbe81ca731f952c3e5d47c813bf1c7a105278016a55fdb0e5d26
 Section: utils
 Priority: optional
 Description: beams - retro terminal screensaver effect
@@ -1345,10 +1345,10 @@ Maintainer: Screensavers Developer <dev@local76.org>
 Installed-Size: 344
 Depends: libc6
 Filename: pool/main/trance-plugin-bursts_0.2.6-1_amd64.deb
-Size: 168456
-MD5sum: 5477e5e0be1d317fc28181417a0711ba
-SHA1: ceaccbfe63f39071696df62e6311d22fd189add7
-SHA256: c94025f11471266ea8e5cb0560f8292253a4fb621a3d343e0e953a3fc1bf8446
+Size: 168500
+MD5sum: 96dd7a45d9d167525de6878f5f1a9a25
+SHA1: 6514047f4c29200a98d65711b4d31c48b1b57fbd
+SHA256: fa06508694f3b2682897c789042857917599e2acdca48a759ed1fa98b101b7ab
 Section: utils
 Priority: optional
 Description: bursts - retro terminal screensaver effect
@@ -1425,10 +1425,10 @@ Maintainer: Screensavers Developer <dev@local76.org>
 Installed-Size: 331
 Depends: libc6
 Filename: pool/main/trance-plugin-chaos_0.2.6-1_amd64.deb
-Size: 155640
-MD5sum: 0553e17aecf22bc440c8d599218eefa5
-SHA1: 6d2129e70fd4cd7bde85dfa360317e40fb7c3afd
-SHA256: 73647672ffe11c1ef2aba40fbd6b7b6a2f887ba5b2d59952d821df5b6bc998b7
+Size: 155592
+MD5sum: 5b992d020c229b06ad466cebc563d0c0
+SHA1: 53f5c92e0a254a2b26a2b1ab401f3ce431b4ce31
+SHA256: 711d774a4015e9caa845f8ab5faee8007e3e40e5a623014edc45ef344c0ab9d9
 Section: utils
 Priority: optional
 Description: chaos - retro terminal screensaver effect
@@ -1505,10 +1505,10 @@ Maintainer: Screensavers Developer <dev@local76.org>
 Installed-Size: 348
 Depends: libc6
 Filename: pool/main/trance-plugin-cosmos_0.2.6-1_amd64.deb
-Size: 160464
-MD5sum: 2ea09aabc2ffe5833ad270eda8383a80
-SHA1: d95f0aa55b9aa08c8bb917ee3b3fea6a48d53833
-SHA256: 14df52296d1da2342498563304e68ec22bddaa7715a30ee46e116d5439a02a56
+Size: 160488
+MD5sum: e1466b59e319aa11f1f4a1a31f9128dd
+SHA1: 779db78f51fdc6c0dd4a90b20305d3b6dcb34578
+SHA256: e22b9fc3768f8fa73d6304e5edbe60e758fd5de4ebcdf0df5cfd9bfb3bfcc94d
 Section: utils
 Priority: optional
 Description: cosmos - retro terminal screensaver effect
@@ -1585,10 +1585,10 @@ Maintainer: Screensavers Developer <dev@local76.org>
 Installed-Size: 312
 Depends: libc6
 Filename: pool/main/trance-plugin-glyphs_0.2.6-1_amd64.deb
-Size: 146352
-MD5sum: 1fe0373d743a911630cd37928965c0b5
-SHA1: c643b6be72c27a5559fd633a902dda6c6841334c
-SHA256: cbb16e1c89548c963dd20a1fb918e939a70215a12f738d07ae3457a61a97d28d
+Size: 146356
+MD5sum: 1bd07dd3b1f7808df9def1dbb572b10c
+SHA1: 93c475a463a20456c22c83e810de22846b22126c
+SHA256: 20343acb9bf0277185e08b0877e1918bd4a411ef9a368d81bdcc38513d1f93d5
 Section: utils
 Priority: optional
 Description: glyphs - retro terminal screensaver effect
@@ -1665,10 +1665,10 @@ Maintainer: Screensavers Developer <dev@local76.org>
 Installed-Size: 340
 Depends: libc6
 Filename: pool/main/trance-plugin-gnats_0.2.6-1_amd64.deb
-Size: 166812
-MD5sum: bf9c4809dc7c64826100c03ce18a9b58
-SHA1: 0318c5fb01fd5c0f29ee7ed82498ef51fbbb6b36
-SHA256: 5c8d494dc705080310f83740d79076483ee26d9add7a130ff3640991db1c4411
+Size: 166856
+MD5sum: 7aedd4033ec947b196face701b77c3dc
+SHA1: bf2500b6e008db6aa1858454fecf960f2e8b406f
+SHA256: 4e8415ed8028bfda4388bdc6539f0e194d59b1bd5b28502b638d564cecf603ad
 Section: utils
 Priority: optional
 Description: gnats - retro terminal screensaver effect
@@ -1745,10 +1745,10 @@ Maintainer: Screensavers Developer <dev@local76.org>
 Installed-Size: 365
 Depends: libc6
 Filename: pool/main/trance-plugin-storm_0.2.6-1_amd64.deb
-Size: 170152
-MD5sum: 9008d3c7ecaacbce11c5d23adb73b270
-SHA1: 7804af8293b80f7e216e0bbf79ad69784c8ea366
-SHA256: e290e7e3eeedae0ed86a916766bce99c09e334bf1e21d625d3b7b096864e33b1
+Size: 170136
+MD5sum: a3cfff275d2c3b5428ffe82b8279b316
+SHA1: 3b6e4e25d785486df210d592f3a8037cc305653a
+SHA256: a8dbd30dcb810eb4073b88647e786ca8812f35dede5d7e008022fdb173366e4c
 Section: utils
 Priority: optional
 Description: storm - retro terminal screensaver effect
