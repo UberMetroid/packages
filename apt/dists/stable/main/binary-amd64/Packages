@@ -2978,6 +2978,22 @@ Priority: optional
 Description: [generated from Rust crate vice-cli]
  Vice is a secure, multi-threaded archive manager in Rust (CLI tool).
 
+Package: vice-cli
+Version: 0.1.6-1
+Architecture: amd64
+Maintainer: UberMetroid
+Installed-Size: 1731
+Depends: libc6 (>= 2.34)
+Filename: pool/main/vice-cli_0.1.6-1_amd64.deb
+Size: 667720
+MD5sum: 8dcd77a2997dbc51d0cf024a5811c4ba
+SHA1: 2e4575a30b265947f3f1e8584f38ab5041605287
+SHA256: 46ddf12d2a3fb537b25f142d373659fc454218d2493552a1223cb69b87819a51
+Section: utils
+Priority: optional
+Description: [generated from Rust crate vice-cli]
+ Vice is a secure, multi-threaded archive manager in Rust (CLI tool).
+
 Package: vice-tui
 Version: 0.1.3-1
 Architecture: amd64
@@ -3005,6 +3021,22 @@ Size: 406964
 MD5sum: 572dc5cbc46800185ceacd4acda3a84b
 SHA1: 7330af8aef4ec09060aa5e51d1bf1f9240563d06
 SHA256: 7e1a4116f47dc62720fc7f34a7504d9ba4f91d9911d339e568d87f8a3eef3e15
+Section: utils
+Priority: optional
+Description: [generated from Rust crate vice-tui]
+ Vice is a secure, multi-threaded archive manager in Rust (TUI tool).
+
+Package: vice-tui
+Version: 0.1.6-1
+Architecture: amd64
+Maintainer: UberMetroid
+Installed-Size: 997
+Depends: libc6 (>= 2.39)
+Filename: pool/main/vice-tui_0.1.6-1_amd64.deb
+Size: 407028
+MD5sum: d99da06708ba769223f7604750e3f754
+SHA1: e679482dfff31eaebf949b655ebed718d7ae5b72
+SHA256: a8415a8a04a57adfb1258935c674d89611f21a2dd3776522dea10ff89332020e
 Section: utils
 Priority: optional
 Description: [generated from Rust crate vice-tui]
