@@ -1794,13 +1794,13 @@ Package: trance-plugin-beams
 Version: 0.2.8-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@trance.org>
-Installed-Size: 325
+Installed-Size: 330
 Depends: libc6
 Filename: pool/main/trance-plugin-beams_0.2.8-1_amd64.deb
-Size: 151456
-MD5sum: 86b56c1923d32a0575431320b3f5cc18
-SHA1: 7b53e9aeffba0f1233f766338915f9a0190e5c05
-SHA256: 58951fe0af04240a07ca1955c14d2530e68ef730fc2f6f9af3daf0aa6a9b786a
+Size: 151940
+MD5sum: ef5aef37cf15549e73ac8723a82aa634
+SHA1: 6c308323ec1d6873a1cad310f221abf80d6d6e86
+SHA256: 73c5e9d9b7fb5b0457774d93b99f03dd93f448bc5b6ca0e6ba442efe2abf6cfe
 Section: utils
 Priority: optional
 Description: beams - retro terminal screensaver effect
@@ -1906,13 +1906,13 @@ Package: trance-plugin-bursts
 Version: 0.2.8-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@trance.org>
-Installed-Size: 344
+Installed-Size: 348
 Depends: libc6
 Filename: pool/main/trance-plugin-bursts_0.2.8-1_amd64.deb
-Size: 168384
-MD5sum: 55730ee49d1f2b273d1606adf47f16fa
-SHA1: 1000e3ca56c5fd50da7d01b548db4a847045e67c
-SHA256: 28f31ba2f120e48a5e92044292c98f6cfc9dacc80a2734253ace1f47fb19ef3c
+Size: 169084
+MD5sum: befbfe6549490c5cdc4dbaa7dece43da
+SHA1: a8010f9495fe1217d95b32b678a616d2bb299b24
+SHA256: 8fd59fc469076c279d8a2a105741fe0f7ab84a21f9027e30f867e01726f73d4d
 Section: utils
 Priority: optional
 Description: bursts - retro terminal screensaver effect
@@ -2018,13 +2018,13 @@ Package: trance-plugin-chaos
 Version: 0.2.8-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@trance.org>
-Installed-Size: 331
+Installed-Size: 336
 Depends: libc6
 Filename: pool/main/trance-plugin-chaos_0.2.8-1_amd64.deb
-Size: 155592
-MD5sum: 05f02c2cddbcc488038f92eb0a045f2d
-SHA1: d2d3d8de7c1963804b1240627d15adda003ed052
-SHA256: ff85da20d5458316a78d6562e89b2051a21f1f5085fb3d589e2e039abcde64dc
+Size: 156244
+MD5sum: 5b56b07d4fde383caf9f2b4cb504cbf1
+SHA1: 616cde5043e1dde92cb138a9f3078e4d7e4752c6
+SHA256: d38d6747d33e1cb2a6ded1818bf1d7a0796c5054de62c6ca9fa337c93733cd4a
 Section: utils
 Priority: optional
 Description: chaos - retro terminal screensaver effect
@@ -2130,13 +2130,13 @@ Package: trance-plugin-cosmos
 Version: 0.2.8-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@trance.org>
-Installed-Size: 348
+Installed-Size: 350
 Depends: libc6
 Filename: pool/main/trance-plugin-cosmos_0.2.8-1_amd64.deb
-Size: 160424
-MD5sum: baf26d2224d0bf4b7ec025ac4559ea65
-SHA1: ab1d1d71a0ee2e3ffec477155ad4b2ff3b89fe2b
-SHA256: 925f02d80e566e1bb3e31d417e3dbe481c279a7e68ed9755bec0b9a0dcba32a4
+Size: 161032
+MD5sum: bdc42a13aaee1d7ada1b793da214e9a5
+SHA1: 77523227ff776f5f5bdc82e6d7314151bc724b6a
+SHA256: 0cc68ef517ca6509c1bd8e7bb9208e1edab12517ba6cc809f5f6a93ecd0eb3e9
 Section: utils
 Priority: optional
 Description: cosmos - retro terminal screensaver effect
@@ -2242,13 +2242,13 @@ Package: trance-plugin-glyphs
 Version: 0.2.8-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@trance.org>
-Installed-Size: 312
+Installed-Size: 315
 Depends: libc6
 Filename: pool/main/trance-plugin-glyphs_0.2.8-1_amd64.deb
-Size: 146332
-MD5sum: 88246fc3fc0054f2222ec5b52a1b8e07
-SHA1: a756f5800ea2a2f06f5c79cc610b36f7666a0638
-SHA256: 86d8a22976895f6495436c5289e1d8951f8e28f44becc7cccc918fecb69afc5d
+Size: 146944
+MD5sum: d963b6ffa6692f79522e620a535b8825
+SHA1: 3769b834d1fd9006342a0656d86f01f022ac251d
+SHA256: 9f3d7908af3766c57f6532a75c15d75f485823665cd393c935732fde60d4afe3
 Section: utils
 Priority: optional
 Description: glyphs - retro terminal screensaver effect
@@ -2354,17 +2354,33 @@ Package: trance-plugin-gnats
 Version: 0.2.8-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@trance.org>
-Installed-Size: 340
+Installed-Size: 343
 Depends: libc6
 Filename: pool/main/trance-plugin-gnats_0.2.8-1_amd64.deb
-Size: 166784
-MD5sum: bafc1db821fc4c0462ae8f927e8140c0
-SHA1: 51a1fe4b38f8e4f45c3c8427bf528c5fb5a492b8
-SHA256: 96627c0d29f378c2b1ac9526397a3fd9e7b7b6028c776148e04837d7ec16bb3b
+Size: 167528
+MD5sum: 40ec8b9acf966e1a159bff3b6a133f03
+SHA1: 695d0c6708b847183a861a9db277800c0a127b48
+SHA256: e66503a6d188f6b7cb7ed78d6c4d2b984a813d64fbc6ec50011116c295645431
 Section: utils
 Priority: optional
 Description: gnats - retro terminal screensaver effect
  Screensaver effect (gnats) part of the screensavers collection.
+
+Package: trance-plugin-radar
+Version: 0.2.8-1
+Architecture: amd64
+Maintainer: Screensavers Developer <dev@trance.org>
+Installed-Size: 310
+Depends: libc6
+Filename: pool/main/trance-plugin-radar_0.2.8-1_amd64.deb
+Size: 143448
+MD5sum: b9c9eba0403ef9d5f790f4cb692ca19f
+SHA1: 46cadf201f0481ec2933e70615ede0c89629c9dd
+SHA256: 69666d905d1628f8a66153d25f4c22e253144388076301bcabc8711d3012ba46
+Section: utils
+Priority: optional
+Description: radar - retro tactical defense radar screensaver effect
+ Screensaver effect (radar) part of the screensavers collection.
 
 Package: trance-plugin-storm
 Version: 0.2.2-1
@@ -2466,13 +2482,13 @@ Package: trance-plugin-storm
 Version: 0.2.8-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@trance.org>
-Installed-Size: 365
+Installed-Size: 366
 Depends: libc6
 Filename: pool/main/trance-plugin-storm_0.2.8-1_amd64.deb
-Size: 170168
-MD5sum: 265fcce1a5c6cd05d89087ed08dd0a8f
-SHA1: 485986b5c3745b6f63c7032827c51b4f6a848f93
-SHA256: b8304a4118751846b98e635989e30a5b1884b2dc968b15bf7b6842d7a6dd04ee
+Size: 170860
+MD5sum: 87e0b354d2ef0276396d8f2c8b7ba1e2
+SHA1: 9a47e1d9712f0568af5b6dda6b1509a34c438341
+SHA256: d180ae093707685942e2e56a4d989ce2dde1b52473dd35192e64db28ec842853
 Section: utils
 Priority: optional
 Description: storm - retro terminal screensaver effect
