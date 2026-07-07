@@ -1,24 +1,24 @@
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Mon, 06 Jul 2026 03:54:27 +0000
+Date: Tue, 07 Jul 2026 00:09:07 +0000
 Description: UberMetroid APT Repository (stable/main)
 Label: ubermetroid
 Origin: ubermetroid
 Suite: stable
 MD5Sum:
- 6ed399597ad7f97bc2a678c01e75b546              200 Release
- 74f9674cbef2441e3265eeb1ef76083e           113100 main/binary-amd64/Packages
- fb2460dacadfe5966601ca4a9b542774            20593 main/binary-amd64/Packages.gz
+ b79719faac9df009e67c1436f05c0999              200 Release
+ dcb9343e9c49140af6e762368c7345df           115691 main/binary-amd64/Packages
+ 26f4f98725e0e4bff7f3b8846a83c8bb            21020 main/binary-amd64/Packages.gz
 SHA1:
- ecd12f9fbf77e00b349f6bbfbbddc420293e63e5              200 Release
- fef8399fe70eefad200d7070f8c2de95566d4003           113100 main/binary-amd64/Packages
- 1ed6b1ccd45f46aa520b469c90ad3dee2a64ad70            20593 main/binary-amd64/Packages.gz
+ d65b40a8702cd087b8ea978916cd3726cac4484f              200 Release
+ 4119a708d9a2018a12a069dcbce381d80c2a60b2           115691 main/binary-amd64/Packages
+ a8f517e78c4b363953ed8f62a86dad41e9132394            21020 main/binary-amd64/Packages.gz
 SHA256:
- e3fa75cf4f6dd00e655c6b9aa49e6eb66965d9e8155855d57925a6e366986e60              200 Release
- 73693dcd499c1529aaedc899a9f9d49b9411324c6b825ab6659d443e7fb4d56a           113100 main/binary-amd64/Packages
- bbd1cd52f7e06b6dd99ba04efa42e2460eb7226aa24e8785478b31ef09cfab30            20593 main/binary-amd64/Packages.gz
+ 39a27df70c59b1c0281535f011e1c9eaac51534ee2627dd5c0bdcf465f43f891              200 Release
+ d73dd7f73719a804ec3ac970b3f02ab7fdc4cb9b1f2baa67521ca981ac2c27ae           115691 main/binary-amd64/Packages
+ 6db7615eab3b8f57707303c59d0ba978e8c68c3ef54cf040f8b0127327847df9            21020 main/binary-amd64/Packages.gz
 SHA512:
- f081eff1efab8ed6655fb654d3075bb8cea6346a1b90ad282bc8de21e427fdb9651517041e4ac15e2f9a96ac9a92e20f51b340fa7eeadeed1ed190afd78b71f7              200 Release
- e16bc16146c6a0eaae3f13d0c41b4a55133e54a07d97b158af6c87a0395f1a0f568eb5a010edbf0d1b277668178a1e9adf7a3d4ae59d09973cbb55bf175ebfc7           113100 main/binary-amd64/Packages
- 5b5d770762fb80800bbe839e63ed1ce8956ff90447d0c74f95b40a594367c9df3fa407f473708cafe37441a3f66e2f56bdb01a381d10b7ad876fd4c4e20a3acb            20593 main/binary-amd64/Packages.gz
+ 99cb6fe8a5c27a528a0d09abccd32de997da4d4c140f3f0123cff813a56341c6f007dddb8edff7eed1a3b95abab36e5bfa98fb2e7cc44f0fbfce224bd3e5dfd2              200 Release
+ f5bcf4fae38d6fbdb5f8652aca140ddd90a7f7476d40bc6bc0cbcbeb26381eae03b4f6bc18eebbae3acd30b9b157ae91b2697f13396ec75398899166d75666ec           115691 main/binary-amd64/Packages
+ 0c9e2add925b82c9a1e9eef7ae3a7714bae968e59df74d8725900878571218eaf7da60604ccefbfccf6c2707d0b290149e81a92d30a729b21eb76d57fdd3731b            21020 main/binary-amd64/Packages.gz
