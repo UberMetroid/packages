@@ -599,6 +599,23 @@ Description: Background idle daemon and core package for trance screensavers
  Background idle monitoring service for trance screensavers.
 
 Package: trance
+Version: 0.3.22-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 2716
+Depends: dbus, fonts-dejavu-core, libc6, trance-plugin-beams
+Recommends: trance-plugins-all, trance-applet, trance-cli
+Filename: pool/main/trance_0.3.22-1_amd64.deb
+Size: 943424
+MD5sum: f7b95a14a6da61f648ce8124b58d0234
+SHA1: 2d55c4b19ab511221acfe47c80ae7fb320da43c9
+SHA256: 3d863036bb18c13a657cb17e0005156f3fe8901ddf380574bc60cb74d879f059
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
 Version: 0.3.3-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@local76.org>
@@ -1313,6 +1330,23 @@ Description: COSMIC Desktop panel applet for the trance screensavers
  Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
 
 Package: trance-applet
+Version: 0.3.22-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 12575
+Depends: libc6, trance
+Filename: pool/main/trance-applet_0.3.22-1_amd64.deb
+Size: 4208472
+MD5sum: 894795b62edb5fda2413d712a89b7ba6
+SHA1: 5eae7ad52437998b119f807048bfd246fcb95c92
+SHA256: 9947674d0d8143d3a9a915c9bbfa6e20517973c1f7027110fa03618eadc756f0
+Section: utils
+Priority: optional
+Homepage: https://github.com/UberMetroid/trance
+Description: COSMIC Desktop panel applet for the trance screensavers
+ Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
+
+Package: trance-applet
 Version: 0.3.3-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@local76.org>
@@ -1794,6 +1828,22 @@ Size: 686672
 MD5sum: 016d247c64e17ad07a39d487daccc09f
 SHA1: 09dbd285f961d341606c60faabe3f23f21ca3704
 SHA256: 3c5d1a244c6baa359e96a5d165dff7edcd486aeb08dc7cbc964595b7bad8daef
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.3.22-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 1907
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.3.22-1_amd64.deb
+Size: 686860
+MD5sum: 80fdb1d97e2f1aa05d612df4ea94ef28
+SHA1: a802b3eefbc3ea992d9353d708c6079c3015d903
+SHA256: 50046af4eb1eac67603a69412fc6489dfbae1610dbc7dbd0a11c16b779a3a7fd
 Section: utils
 Priority: optional
 Description: Command-line interface for the trance screensaver daemon
@@ -3119,6 +3169,24 @@ Size: 1400
 MD5sum: 52a4850abddbff9c88f3433b2055a0ad
 SHA1: ebadb5cd80e5ca4eb447ff8d58916cde46d0a1a6
 SHA256: f7abe9dfb8dc5a85c6e416fa7fe0b9c23cf9783525a7c675a54022c261acb8bd
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.3.22-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 4
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-radar, trance-plugin-storm
+Filename: pool/main/trance-plugins-all_0.3.22-1_amd64.deb
+Size: 1400
+MD5sum: ea3fab54afb9811171702d532e8ebb50
+SHA1: 62a1306536089e1e259beb693ccb164aa865ee52
+SHA256: a59b30b07383da6a5f2daeada961c648ebf241dc605abc7f5ef1c21e054825ef
 Section: utils
 Priority: optional
 Description: Meta package that recommends all official trance screensaver plugins
