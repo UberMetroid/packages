@@ -4,38 +4,38 @@ Hash: SHA512
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Mon, 06 Jul 2026 03:54:27 +0000
+Date: Tue, 07 Jul 2026 00:25:24 +0000
 Description: UberMetroid APT Repository (stable/main)
 Label: ubermetroid
 Origin: ubermetroid
 Suite: stable
 MD5Sum:
- 6ed399597ad7f97bc2a678c01e75b546              200 Release
- 74f9674cbef2441e3265eeb1ef76083e           113100 main/binary-amd64/Packages
- fb2460dacadfe5966601ca4a9b542774            20593 main/binary-amd64/Packages.gz
+ ed41af1d9ee425402dd6a70ef932ff6f              200 Release
+ dcb9343e9c49140af6e762368c7345df           115691 main/binary-amd64/Packages
+ 389c1bfbe187000bd7898db20293bf86            21020 main/binary-amd64/Packages.gz
 SHA1:
- ecd12f9fbf77e00b349f6bbfbbddc420293e63e5              200 Release
- fef8399fe70eefad200d7070f8c2de95566d4003           113100 main/binary-amd64/Packages
- 1ed6b1ccd45f46aa520b469c90ad3dee2a64ad70            20593 main/binary-amd64/Packages.gz
+ b09cc7134e3d0d6fc40ac69705e998c776ea0840              200 Release
+ 4119a708d9a2018a12a069dcbce381d80c2a60b2           115691 main/binary-amd64/Packages
+ 383750b5ae513ba0700c3be93b49bd19ac349591            21020 main/binary-amd64/Packages.gz
 SHA256:
- e3fa75cf4f6dd00e655c6b9aa49e6eb66965d9e8155855d57925a6e366986e60              200 Release
- 73693dcd499c1529aaedc899a9f9d49b9411324c6b825ab6659d443e7fb4d56a           113100 main/binary-amd64/Packages
- bbd1cd52f7e06b6dd99ba04efa42e2460eb7226aa24e8785478b31ef09cfab30            20593 main/binary-amd64/Packages.gz
+ 592654e5596f9c5854bd8f140c1135f569ce9091b9e74d7b613ccec86b41a2c0              200 Release
+ d73dd7f73719a804ec3ac970b3f02ab7fdc4cb9b1f2baa67521ca981ac2c27ae           115691 main/binary-amd64/Packages
+ 27f156c342fccc269523789d6fb86c2112fef21dc60befca9f28037e09d584f1            21020 main/binary-amd64/Packages.gz
 SHA512:
- f081eff1efab8ed6655fb654d3075bb8cea6346a1b90ad282bc8de21e427fdb9651517041e4ac15e2f9a96ac9a92e20f51b340fa7eeadeed1ed190afd78b71f7              200 Release
- e16bc16146c6a0eaae3f13d0c41b4a55133e54a07d97b158af6c87a0395f1a0f568eb5a010edbf0d1b277668178a1e9adf7a3d4ae59d09973cbb55bf175ebfc7           113100 main/binary-amd64/Packages
- 5b5d770762fb80800bbe839e63ed1ce8956ff90447d0c74f95b40a594367c9df3fa407f473708cafe37441a3f66e2f56bdb01a381d10b7ad876fd4c4e20a3acb            20593 main/binary-amd64/Packages.gz
+ c860dce21b1d79b97b756dcda0a9badc299ee91bbfb850868e70cedca7c2030755d3cd3ed985c2db454b70baf2810d422df04abbd7e945a010971d3749c82afa              200 Release
+ f5bcf4fae38d6fbdb5f8652aca140ddd90a7f7476d40bc6bc0cbcbeb26381eae03b4f6bc18eebbae3acd30b9b157ae91b2697f13396ec75398899166d75666ec           115691 main/binary-amd64/Packages
+ 82a5a3877a78d322c3f9c9c92f802c44abc0ee3c834dd6d7c6316205089f28d1c940e0d79735f5789c230ef406e4dedd343369a8f96a7da99151bf79b56dcbc4            21020 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQHJBAEBCgAzFiEE5AWNIPxY0SJEHSN9LHJt1Qdohm8FAmpLJvMVHGplcnlkbGV1
-Y2tAZ21haWwuY29tAAoJECxybdUHaIZv838L/R+7JiWNJkFHW+x3ulZ1Y500GchC
-Ifn97F6jAYFJ89Cxh93ak7BfgTlQoZcM7LHoLjSxQvZmQhDEjHDWlJ6pYzVR308G
-FHjBXIVForZYD+OJ2yfm9xYjpX1rCyhAMDwHfFEp7fQNbDn4ATCcB5d57qkzuAgM
-RT7KA0nbGQCTmQ0FAOJMY+AFkjGS3j80hfXcnCtPYZAxCJeDgby8EzWHwaCJWDfU
-d68HJlrNC5BCj4i73N0i5uzOuX/OURE+K7X0EsQflRcLKqfz3s5bTdp5BetwIA/G
-IQyPxy9mylFE9dE2RBENc8DD760c6BIN010CljwVaxHpnzM+WgYdJP5FEyNTt3Kk
-VwghSfRZcVwQJTOEVcW9grUsiP8OEHzuSmVzLEdvuf4ur4zxZwxT6JEr7wemdEaE
-e0PXgZlMO3NDkL8dkf8YdN75eztklPrNW5KFzTF10orea5ZHaSpiIgMviwvHCA4o
-HmT5UgAhqDNkWyIIl0QlIQN7ppDdXbvpRArSwQ==
-=GlQ4
+iQGzBAEBCgAdFiEEVJ5zybySKceG5Tji+9j8UseBfdIFAmpMR3QACgkQ+9j8UseB
+fdI1OQwAmnS90rJ8FtL9FTQMcVaXAiOVX08xQKmSm2bU8U3K824U+WP6N4Tu5ok1
+IqkEFE7wHxYT1Cp2JfeefvJ6aO0aHsSeV2XC3ocd6fwYSOpdodJ3WF8fRQUos7rj
+nEtvNn18EsWvs4CG7+3Dz0NP6gdrrJ+NixEydj6odJpI9LLjOcHetqX2+dIkFU8u
+Mol/u1d7bqVMPk88u2VXyGbJf2Sakma/LGLZb26l+aWwBF57iA5pr/mitd+aPeEc
+NkJA/HexZyE5GRlCtZ+n1Iq2wnNW7TKhN9JRpljH9GKjhdaynevLePbM3VHvY7DO
+hBCrNAqFFBe67X02msmmxQAO/tpajiSgvyr6wyFeKZHvBiaNGU73XdtoliVNcJpe
+VduWtqytXzs9GJIHS8PCeFSuFk6WBeGUMiGkKsqyp9nJ20uMx9ifJ9m1wjgaXJDk
+FSPsxX18fkAoEUFCCxeoeQ+/M/GfMEoWNCgqDt6fDCxhsXMI9C/6QYXsCg4t6Jhy
+phvI1g7p
+=cvw0
 -----END PGP SIGNATURE-----
