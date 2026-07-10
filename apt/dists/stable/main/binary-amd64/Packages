@@ -32,24 +32,6 @@ Description: [generated from Rust crate morphball]
  tools).
 
 Package: trance
-Version: 0.3.36-1
-Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
-Installed-Size: 2643
-Depends: dbus, fonts-dejavu-core, libc6, trance-plugin-beams
-Recommends: trance-plugins-all, trance-cli, trance-tui
-Suggests: trance-applet
-Filename: pool/main/trance_0.3.36-1_amd64.deb
-Size: 925744
-MD5sum: 636dc01b884069e702468579fadd95e8
-SHA1: 7ae42e129e3218eac0a0cdb8885af7507b76637b
-SHA256: aef35f053ddc40170a036c734d0d41ac890769f1de5d8c964a6de33dea62ba12
-Section: utils
-Priority: optional
-Description: Background idle daemon and core package for trance screensavers
- Background idle monitoring service for trance screensavers.
-
-Package: trance
 Version: 0.3.37-1
 Architecture: amd64
 Maintainer: UberMetroid <jerydleuck@gmail.com>
@@ -80,6 +62,24 @@ Size: 949224
 MD5sum: 85820be938526ecc575a29c1ee616d14
 SHA1: 0bbb98edb308abb0e0bff2d7d297d5d3f08ebaf0
 SHA256: 93cb005ac3c2c2e654ce83ec9ef0ccfa377ab6234cdfce69ef8fac31435988d3
+Section: utils
+Priority: optional
+Description: Background idle daemon and core package for trance screensavers
+ Background idle monitoring service for trance screensavers.
+
+Package: trance
+Version: 0.3.39-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 2646
+Depends: dbus, fonts-dejavu-core, libc6, trance-plugin-beams
+Recommends: trance-plugins-all, trance-cli, trance-tui
+Suggests: trance-applet
+Filename: pool/main/trance_0.3.39-1_amd64.deb
+Size: 926716
+MD5sum: c6d6b24fa2072321ff4e51245e231bea
+SHA1: 7a71c1eb1610f2cd69ee1bed84fb3e4bd58c41bc
+SHA256: daa1af471c116d9e0a77dd1383853bb2fa3a059b16e36d6cec8a108e6a3abd74
 Section: utils
 Priority: optional
 Description: Background idle daemon and core package for trance screensavers
@@ -146,22 +146,6 @@ Description: COSMIC Desktop panel applet for the trance screensavers
  trance-tui there).
 
 Package: trance-cli
-Version: 0.3.34-1
-Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
-Installed-Size: 1920
-Depends: libc6, trance
-Filename: pool/main/trance-cli_0.3.34-1_amd64.deb
-Size: 691852
-MD5sum: 3dfb647ed5398f658a4a9f75256ee157
-SHA1: 396b50df4746fb00ca0d1e55b15ddd5fd5a77def
-SHA256: 7a40ffdfb5ab20348d7b7471a896f61892a344429f43eb7c24638fe81eda7be1
-Section: utils
-Priority: optional
-Description: Command-line interface for the trance screensaver daemon
- Thin CLI for controlling the trance screensaver daemon over D-Bus.
-
-Package: trance-cli
 Version: 0.3.35-1
 Architecture: amd64
 Maintainer: UberMetroid <jerydleuck@gmail.com>
@@ -188,6 +172,22 @@ Size: 692080
 MD5sum: ab1bf93ce5974b44dcbaadf637d57442
 SHA1: f53545a8a031c303d642d74bd1a46938c75bdc7d
 SHA256: 79863c4e549f3aa5b6cc80c73a06b21ee121d747bc21083778a7919e20a40889
+Section: utils
+Priority: optional
+Description: Command-line interface for the trance screensaver daemon
+ Thin CLI for controlling the trance screensaver daemon over D-Bus.
+
+Package: trance-cli
+Version: 0.3.39-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 1890
+Depends: libc6, trance
+Filename: pool/main/trance-cli_0.3.39-1_amd64.deb
+Size: 682328
+MD5sum: 93cb93dbaacd1c5f2b9a684c249e1743
+SHA1: 6384d5a01c001c0059f5cdc11c6aca86cadf9d39
+SHA256: b4925c596ab4426f7a23fa90634cb94e38f3cd17fc2ae2d7cfbafd80712cc777
 Section: utils
 Priority: optional
 Description: Command-line interface for the trance screensaver daemon
@@ -488,6 +488,23 @@ Priority: optional
 Description: Predator-prey firefly swarm
  Predator-prey firefly swarm. Official trance screensaver plugin.
 
+Package: trance-plugin-loom
+Version: 0.1.0-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 312
+Depends: libc6
+Filename: pool/main/trance-plugin-loom_0.1.0-1_amd64.deb
+Size: 146124
+MD5sum: c8486774731c8f047c1f9adb978276c3
+SHA1: 98222b80bbe6a69ef4c7c136ae96143330d9efd2
+SHA256: 71470494034fd978e51666239ce624bf3b33fbaecad7acb8f7fee1679b973db5
+Section: utils
+Priority: optional
+Description: Weaving loom: warp, shuttle, and growing textile
+ Weaving loom with shuttle and growing fabric. Official trance screensaver
+ plugin.
+
 Package: trance-plugin-radar
 Version: 0.2.8-1
 Architecture: amd64
@@ -535,6 +552,22 @@ Section: utils
 Priority: optional
 Description: Retro CRT tactical radar sweep
  Retro CRT tactical radar sweep. Official trance screensaver plugin.
+
+Package: trance-plugin-relay
+Version: 0.1.0-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 316
+Depends: libc6
+Filename: pool/main/trance-plugin-relay_0.1.0-1_amd64.deb
+Size: 147872
+MD5sum: 34521033a7a30f93b57dc673180a800a
+SHA1: 9c4e37ae6d872c2e660c219ba02f41c18c3e8a30
+SHA256: 950c7f9e341fb62f7ae02c87cc8ae5a434ef1bcbe949347e9af2ea103c0c5927
+Section: utils
+Priority: optional
+Description: Message relay: packets hop a soft system graph
+ Message packets hop a soft system graph. Official trance screensaver plugin.
 
 Package: trance-plugin-storm
 Version: 0.2.8-1
@@ -586,23 +619,21 @@ Description: Forest rain, lightning, and wildlife silhouettes
  Forest rain, lightning, and wildlife silhouettes. Official trance screensaver
  plugin.
 
-Package: trance-plugins-all
-Version: 0.3.34-1
+Package: trance-plugin-tide
+Version: 0.1.0-1
 Architecture: amd64
 Maintainer: UberMetroid <jerydleuck@gmail.com>
-Installed-Size: 4
-Depends: trance
-Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-radar, trance-plugin-storm
-Filename: pool/main/trance-plugins-all_0.3.34-1_amd64.deb
-Size: 1396
-MD5sum: 1f62c659f3e55da52f522f1333b88b3a
-SHA1: 9ae110676f3b0ecc976390ee872749254ccebad5
-SHA256: 9a2a3e74e82c37dc268f6696099d3e07bf0607f94b21bd938c6e5c29affefdeb
+Installed-Size: 316
+Depends: libc6
+Filename: pool/main/trance-plugin-tide_0.1.0-1_amd64.deb
+Size: 147688
+MD5sum: c906eb04d8bf2605bc4b20b9c7b5285d
+SHA1: 3b5c85ffc5e77bfb8e982115e61acc058f11a923
+SHA256: 952f6b0f887299e5802fea2f27c85cf51edbe63288d982a3e5b394cdfe8d8ed2
 Section: utils
 Priority: optional
-Description: Meta package that recommends all official trance screensaver plugins
- Convenience meta package that recommends the optional trance screensaver
- plugins. The stock beams effect ships with the core trance package.
+Description: Living shoreline: rising tide, foam, and wet sand
+ Living shoreline with rising tide and foam. Official trance screensaver plugin.
 
 Package: trance-plugins-all
 Version: 0.3.35-1
@@ -634,6 +665,24 @@ Size: 1488
 MD5sum: 22675cf011a5d5abd7ef15c67b7171d8
 SHA1: 0540345166a5bfe0e437d1a5d3d35c094ddcf2d5
 SHA256: a54cbfafc0c0d9b464e56e7d7586d94d30192c6bea5ca256aca28f2d2835cc6a
+Section: utils
+Priority: optional
+Description: Meta package that recommends all official trance screensaver plugins
+ Convenience meta package that recommends the optional trance screensaver
+ plugins. The stock beams effect ships with the core trance package.
+
+Package: trance-plugins-all
+Version: 0.3.39-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 4
+Depends: trance
+Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-radar, trance-plugin-storm, trance-plugin-tide, trance-plugin-loom, trance-plugin-relay
+Filename: pool/main/trance-plugins-all_0.3.39-1_amd64.deb
+Size: 1500
+MD5sum: 68e77f4acea2148195dbe261add71940
+SHA1: 32979f7cf7358d0eec74dcbaba4d1ee9706e49e4
+SHA256: 66c83c48c80400934e29589a5a15eea4d586eb00fc908af175ee899c51f6f31b
 Section: utils
 Priority: optional
 Description: Meta package that recommends all official trance screensaver plugins
