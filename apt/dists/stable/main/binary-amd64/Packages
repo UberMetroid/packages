@@ -229,22 +229,6 @@ Description: Spotlight cones sweeping a rising dust starfield
  plugin.
 
 Package: trance-plugin-bursts
-Version: 0.2.7-1
-Architecture: amd64
-Maintainer: Screensavers Developer <dev@ubermetroid.org>
-Installed-Size: 344
-Depends: libc6
-Filename: pool/main/trance-plugin-bursts_0.2.7-1_amd64.deb
-Size: 168484
-MD5sum: d0fade7238e6b09788a7d06fbc91aafa
-SHA1: 24449b7aa01842fe20df4f3dc5ab6f5a7e4fb376
-SHA256: 217c54cf3928e2dd915a8dcb9cb34a039ee8c62cd952440cbdb51cdbc75ed7e2
-Section: utils
-Priority: optional
-Description: bursts - retro terminal screensaver effect
- Screensaver effect (bursts) part of the screensavers collection.
-
-Package: trance-plugin-bursts
 Version: 0.2.8-1
 Architecture: amd64
 Maintainer: Screensavers Developer <dev@trance.org>
@@ -276,21 +260,21 @@ Priority: optional
 Description: City skyline fireworks particle show
  City skyline fireworks particle show. Official trance screensaver plugin.
 
-Package: trance-plugin-chaos
-Version: 0.2.7-1
+Package: trance-plugin-bursts
+Version: 0.3.1-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@ubermetroid.org>
-Installed-Size: 331
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 347
 Depends: libc6
-Filename: pool/main/trance-plugin-chaos_0.2.7-1_amd64.deb
-Size: 155644
-MD5sum: 167df25fef70d2bb79f88cd9ab011d89
-SHA1: a83068c6ba8e21e1c2a2fa7f6f7d5a8d47fb441e
-SHA256: a029f18e8dad2e52fd1ebf4bc7292c6dfdad919ee6a843536f3c44b4eb3bc011
+Filename: pool/main/trance-plugin-bursts_0.3.1-1_amd64.deb
+Size: 169844
+MD5sum: 4732beae17c55b998513cb685c5d0659
+SHA1: 5ac431cfd7a12dff1419c079cb32655dd31cc08a
+SHA256: 1491aa16431b9c021938ec003578fa194709c2279912d90cf7e98eec7fa6f998
 Section: utils
 Priority: optional
-Description: chaos - retro terminal screensaver effect
- Screensaver effect (chaos) part of the screensavers collection.
+Description: City skyline fireworks particle show
+ City skyline fireworks particle show. Official trance screensaver plugin.
 
 Package: trance-plugin-chaos
 Version: 0.2.8-1
@@ -324,21 +308,21 @@ Priority: optional
 Description: Chromatic-aberration system logo glitch
  Chromatic-aberration system logo glitch. Official trance screensaver plugin.
 
-Package: trance-plugin-cosmos
-Version: 0.2.7-1
+Package: trance-plugin-chaos
+Version: 0.3.1-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@ubermetroid.org>
-Installed-Size: 348
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 333
 Depends: libc6
-Filename: pool/main/trance-plugin-cosmos_0.2.7-1_amd64.deb
-Size: 160456
-MD5sum: 2278df1ae8b8883740bf44dbdba8164c
-SHA1: 64d040469d2ee106ad7523ff2231eb7938d9cef4
-SHA256: 89092bdecbc9e7384071901c864dce58899796ef9ed916330aa05f4569120689
+Filename: pool/main/trance-plugin-chaos_0.3.1-1_amd64.deb
+Size: 156340
+MD5sum: 2a6db3ed0127f1568dc7ab5e994776d8
+SHA1: 4f8ddb6cb2d1eb7ae5bb5dec7ac1530294f156a7
+SHA256: 20f9d2e9a833ed2d204bf8c569a8b056ff4739f04933fd87d008f759cede631b
 Section: utils
 Priority: optional
-Description: cosmos - retro terminal screensaver effect
- Screensaver effect (cosmos) part of the screensavers collection.
+Description: Chromatic-aberration system logo glitch
+ Chromatic-aberration system logo glitch. Official trance screensaver plugin.
 
 Package: trance-plugin-cosmos
 Version: 0.2.8-1
@@ -373,21 +357,22 @@ Description: Accretion disk to collapsed singularity lifecycle
  Accretion disk to collapsed singularity lifecycle. Official trance screensaver
  plugin.
 
-Package: trance-plugin-glyphs
-Version: 0.2.7-1
+Package: trance-plugin-cosmos
+Version: 0.3.1-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@ubermetroid.org>
-Installed-Size: 312
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 350
 Depends: libc6
-Filename: pool/main/trance-plugin-glyphs_0.2.7-1_amd64.deb
-Size: 146360
-MD5sum: eed3da927e68214f6c0b8cb6c3aa0ecc
-SHA1: 4690fa0eadb205532ef29395f44b8c9670c32e2b
-SHA256: d4346adba3d08e6b590c26f53556a747a8ae58e2de7794bcde80b42941aba48b
+Filename: pool/main/trance-plugin-cosmos_0.3.1-1_amd64.deb
+Size: 161036
+MD5sum: 9b1f607f2b7026d6c8c5d295390b4822
+SHA1: 022b3c9a65ce685e8de95351e888de82b9f4fbf2
+SHA256: 04f15583ee46c1cbeacb6190b1b6805287cb941605a2adfd70daf040746bba76
 Section: utils
 Priority: optional
-Description: glyphs - retro terminal screensaver effect
- Screensaver effect (glyphs) part of the screensavers collection.
+Description: Accretion disk to collapsed singularity lifecycle
+ Accretion disk to collapsed singularity lifecycle. Official trance screensaver
+ plugin.
 
 Package: trance-plugin-glyphs
 Version: 0.2.8-1
@@ -422,21 +407,22 @@ Description: Matrix-style rain with live system information
  Matrix-style rain with live system information. Official trance screensaver
  plugin.
 
-Package: trance-plugin-gnats
-Version: 0.2.7-1
+Package: trance-plugin-glyphs
+Version: 0.3.1-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@ubermetroid.org>
-Installed-Size: 340
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 314
 Depends: libc6
-Filename: pool/main/trance-plugin-gnats_0.2.7-1_amd64.deb
-Size: 166844
-MD5sum: c83b187b41454ee2b3cb0ed275695ce5
-SHA1: ac256489867d2d9ce93344b918524e00e31e6054
-SHA256: c4e4fe4895974930fc690c83e208dae9a69dde1dea4f7839745444848f160838
+Filename: pool/main/trance-plugin-glyphs_0.3.1-1_amd64.deb
+Size: 146904
+MD5sum: 9c31774a0de29aa5c7fab8ab8afec720
+SHA1: 853192799c94422b1411961e9102fe99e015fc1f
+SHA256: df7644b23f1a04ffb93fd1fd39bfb26237afa4138fb969be64248e69ef34cd7d
 Section: utils
 Priority: optional
-Description: gnats - retro terminal screensaver effect
- Screensaver effect (gnats) part of the screensavers collection.
+Description: Matrix-style rain with live system information
+ Matrix-style rain with live system information. Official trance screensaver
+ plugin.
 
 Package: trance-plugin-gnats
 Version: 0.2.8-1
@@ -465,6 +451,22 @@ Size: 166904
 MD5sum: 8c80a494ccd4565a5cdc50c3992ef51a
 SHA1: b78515fd13c692d808272684665140d3d1fd9be0
 SHA256: fcbdf6e35437a86c47b715f2498285a9c98e5cd4a218abd0f030649511569970
+Section: utils
+Priority: optional
+Description: Predator-prey firefly swarm
+ Predator-prey firefly swarm. Official trance screensaver plugin.
+
+Package: trance-plugin-gnats
+Version: 0.3.1-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 343
+Depends: libc6
+Filename: pool/main/trance-plugin-gnats_0.3.1-1_amd64.deb
+Size: 167764
+MD5sum: 362d3aace856da697620bf1c9b49be7e
+SHA1: c2146581dfd1f656a8cafb75e58a3ad0bdb446e8
+SHA256: 4c27352b49493557036f9df96ccadcf8bf7af3a5985b08f6c772911bd2056315
 Section: utils
 Priority: optional
 Description: Predator-prey firefly swarm
@@ -502,21 +504,21 @@ Priority: optional
 Description: Retro CRT tactical radar sweep
  Retro CRT tactical radar sweep. Official trance screensaver plugin.
 
-Package: trance-plugin-storm
-Version: 0.2.7-1
+Package: trance-plugin-radar
+Version: 0.3.1-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@ubermetroid.org>
-Installed-Size: 365
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 318
 Depends: libc6
-Filename: pool/main/trance-plugin-storm_0.2.7-1_amd64.deb
-Size: 170144
-MD5sum: facf42e93ccbdab9fb04d8187cdfc141
-SHA1: db317cb6d764d715b0a6bcafa307338a65106170
-SHA256: 8b70a473c9944b6bb240a0b364c618d39eb9088b882c5bf2f88b1aa48e47ca70
+Filename: pool/main/trance-plugin-radar_0.3.1-1_amd64.deb
+Size: 148224
+MD5sum: 2b3cab38992ca027aeca985b1407c037
+SHA1: 08abd2e7ae82d1e23ca5875a104950d2a4e699a3
+SHA256: e74273577ecb77544b2b68eae8c0b9200ee49f048bd2e47806def610c4a17ad4
 Section: utils
 Priority: optional
-Description: storm - retro terminal screensaver effect
- Screensaver effect (storm) part of the screensavers collection.
+Description: Retro CRT tactical radar sweep
+ Retro CRT tactical radar sweep. Official trance screensaver plugin.
 
 Package: trance-plugin-storm
 Version: 0.2.8-1
@@ -545,6 +547,23 @@ Size: 170252
 MD5sum: e0790aab2490ac3dfdf57c9fb73e6604
 SHA1: bcd655c337e900aac7cbab153c6cfb3aa92bebe3
 SHA256: cb29ab0fa3300fbc2258ecc91ee4e955d6fd1ce7aeff4fc7575f564aaa5b21f1
+Section: utils
+Priority: optional
+Description: Forest rain, lightning, and wildlife silhouettes
+ Forest rain, lightning, and wildlife silhouettes. Official trance screensaver
+ plugin.
+
+Package: trance-plugin-storm
+Version: 0.3.1-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 366
+Depends: libc6
+Filename: pool/main/trance-plugin-storm_0.3.1-1_amd64.deb
+Size: 170900
+MD5sum: d14cac6eae0c1127166c3783ff25f012
+SHA1: d8d8418f24f6be3740277676776d97968382ea1e
+SHA256: 7657e3d60c000750d3daebbee01cb097dcf6b160a27244bd30640103edd4fced
 Section: utils
 Priority: optional
 Description: Forest rain, lightning, and wildlife silhouettes

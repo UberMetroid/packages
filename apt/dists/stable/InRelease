@@ -4,38 +4,38 @@ Hash: SHA512
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Fri, 10 Jul 2026 18:08:40 +0000
+Date: Fri, 10 Jul 2026 18:29:16 +0000
 Description: UberMetroid APT Repository (stable/main)
 Label: ubermetroid
 Origin: ubermetroid
 Suite: stable
 MD5Sum:
- 2b1e8bb99ebadb59a51b849d37f6d63e              200 Release
- 9a81ee9cc078dedc539d2dfb7ed907bc            22945 main/binary-amd64/Packages
- 25c32db5735bc7475c4d3a7ab67833e4             5646 main/binary-amd64/Packages.gz
+ 51ccf4ef0bb242da758b5e0d198efc92              200 Release
+ 2b1a34b4ab4b6dc70d82d611dd35cc95            23498 main/binary-amd64/Packages
+ 2665a96f58cd14ab50770b99980519f3             5755 main/binary-amd64/Packages.gz
 SHA1:
- 3eb0db6f016e7bb4c4efd201c6bb401ff211d464              200 Release
- db69fd45b2ac47368ed12288408eafc2285e4b8d            22945 main/binary-amd64/Packages
- 69c9c7af18ec671bbc3a99a2e4c8fa8b9327aab8             5646 main/binary-amd64/Packages.gz
+ 77202ff3c3f0520764f6346db44486ef3111cf51              200 Release
+ 4d843ed8d90dce2946db0477e7417f7abbf68f6d            23498 main/binary-amd64/Packages
+ 86d9b60ac8cff55170ede01bdced4a76eebac5fd             5755 main/binary-amd64/Packages.gz
 SHA256:
- 3aa81e7275b61d487284e6e68df25fd4bc374fd3475750a80c37513a1c8baf30              200 Release
- 1cddea8baad021afeeeb37f5649cb7b37a2cd04cde57d6bc5a7fe969ee69f334            22945 main/binary-amd64/Packages
- 584d6fedb8e6c87cfcd014ae77e91fe7a73a92a16f4b1d7f54b439bca8deaede             5646 main/binary-amd64/Packages.gz
+ a5062a240e422f3af6699d08eed351e9c5bf6c37a47bdc454e2eaf81727494a0              200 Release
+ 9e4031106e31dfa37aeddd054ced58c1dc57f4e2672f5150cbabe5e39bab232f            23498 main/binary-amd64/Packages
+ 3d24122b355a435724f5a60b2d66697c0d3c170abb27d8acafba365029b8f06a             5755 main/binary-amd64/Packages.gz
 SHA512:
- 08c8cdd5e02c512ee720c5bf7638201d2b55103bb75b712336dab2cd6a0a2b2e3adfc3b10fdb0520209ef7cb5aed878fe98adb2530de5741f168e994a5ba33d6              200 Release
- 749dce2735c5388caf1ab9e37661ef25f7c9fc0ee8c2089e1ab8927c15ea8d852248a8e1235a685c9bcd7cbbfeb1953c7dbe1f2e8b434e9e1ec7596ba995cde2            22945 main/binary-amd64/Packages
- 3868df62b4c765191443161c95fd5c100e0dfa0ef859f8b85749aa1bf039d5026d16df1d816dfe9b5c37599fa64fe536eeac55fb047f00357fccd2afb41fb1e4             5646 main/binary-amd64/Packages.gz
+ c73c59681e78fe5060b78314c49df9662f7d5fdcaa3ad6dd1e4a6e799e6a2d9c9ff3c923a98acffea8e4d1fc7f1c04281278240a82089cbf7080923b4d619063              200 Release
+ e770e38c7faef3e97968c58f330c7071416c0bbbd5fe8dc74edfe58103f4845bda540db6615d8f8cdd8a9c07ba95f2844f4003c17b30b5a86cbb216f935fd9c7            23498 main/binary-amd64/Packages
+ fa83c0f63e2b542f94f9bc0bfe633acb7f529e5e4b5846c421601663bb6707b6d07a860efb45cbc9282d11ce68e457d12cd3e3bcf093c8ca48196866142a83fb             5755 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEVJ5zybySKceG5Tji+9j8UseBfdIFAmpRNSgACgkQ+9j8UseB
-fdKEhAv/QEM8l4UzzLsISWdyjc7UUpd7kvd4rHgu7d+6zIb7x2WpjtW5+4WkdhoG
-4YrXEQvrDeBzq2nkfHGFsSejQXSK3SzJbxQdyeZK6METqH2edCC+N36Nk+PaKXri
-QSsIFzyMnVaKhyqOPY/hjRO8wVmxKdIi5r2Ar5D4Ptnt/sNl1ltUNZ1W0zsKcuyU
-iYk7IccjA4pvmkO1L3EqHh266Ns4Bq38nJZdFDTKQ388auOXrlFf7YkkaTl1jUil
-N9E9+dcLcc30NeTbYAscUNXVFaaYE9XMtzvHvlZ+f3Kn1/fLdeYARCEFNtfSk3kI
-BBd5Hy3SAyLVMp7RQthyrKcZIGC3Lo4YLnTYxt54jD2B7Kfn20ItJIERwivCdUqZ
-eAu6gNX0BYtp8miABkFC5dB2owvFRIIxNNw1GNEfA4Bo6XU0GMKRrP+qyUra7prC
-gS8sM8MPbBJJtwlPvhbkSasDsMV2LQy7S1fA1RnTkj8XhpIUqv2/s3iqVhawybbT
-fhlE2/a0
-=gyBg
+iQGzBAEBCgAdFiEEVJ5zybySKceG5Tji+9j8UseBfdIFAmpROfwACgkQ+9j8UseB
+fdLZcwv/ad+GIV9bxc+Wse9+CW7mewiuxg5FNf0u8ctphKcF7zTWqq0sOePgJwxf
+h1dI8NugIEvCfB9ANPvc4VvVjqbd8sdQ8Me5mkzM1xSwO8ZWPHeJ9eJLyXyRaGrk
+bietEZ495hFu8yVQ81GkAoF655vpy5jspx7lEnNjsCAWDGBZj+3gr+3+fHodyQb7
+FdpW7u7t5XMsySLEbwn2zm9+abkmLiuMNpEcWfSiY1mv+OzNJmFAjUB7x4AFHW5v
+ijAUyL4ytz6nIsCk6hW3wfVfhyy3lfmFzcwHVLJ5m+qjFVrrsSllzpXgNr+myukw
+MvZ5Y35XS5pyS7rhN7Uz4hn7/rzsyL1UJX52DWRtIy+9D9fi9BDaTjj+pJjBDw3b
+r0bXCAXiKsvC3uFN8/WqkTdCXpOdNyxZjsH41eXTowcBoTY+nYOgfCuyIY0KZ2T/
+YSUks042H0Y3o3ekn3bWnAgHI4GgfGbrg8dnbFDFrxZ/sp+Pz7/of9211OX90hrl
+mpBYiMqb
+=A7P3
 -----END PGP SIGNATURE-----
