@@ -668,22 +668,6 @@ Priority: optional
 Description: Retro CRT tactical radar sweep
  Retro CRT tactical radar sweep. Official trance screensaver plugin.
 
-Package: trance-plugin-relay
-Version: 0.1.0-1
-Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
-Installed-Size: 316
-Depends: libc6
-Filename: pool/main/trance-plugin-relay_0.1.0-1_amd64.deb
-Size: 147872
-MD5sum: 34521033a7a30f93b57dc673180a800a
-SHA1: 9c4e37ae6d872c2e660c219ba02f41c18c3e8a30
-SHA256: 950c7f9e341fb62f7ae02c87cc8ae5a434ef1bcbe949347e9af2ea103c0c5927
-Section: utils
-Priority: optional
-Description: Message relay: packets hop a soft system graph
- Message packets hop a soft system graph. Official trance screensaver plugin.
-
 Package: trance-plugin-ripple
 Version: 0.1.5-1
 Architecture: amd64
