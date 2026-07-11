@@ -1,0 +1,77 @@
+name: Import Product Release
+
+on:
+  repository_dispatch:
+    types: [new_release]
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    name: Import & Index Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout packages repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install indexing and signing dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev apt-utils createrepo-c rpm gpg
+
+      - name: Download release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Download all .deb assets from the release to apt/pool/main/
+          gh release download "${{ github.event.client_payload.tag }}" \
+            --repo "${{ github.event.client_payload.repo }}" \
+            --pattern "*.deb" \
+            --dir apt/pool/main/ --clobber || true
+
+          # Download all .rpm assets from the release to rpm/pool/
+          gh release download "${{ github.event.client_payload.tag }}" \
+            --repo "${{ github.event.client_payload.repo }}" \
+            --pattern "*.rpm" \
+            --dir rpm/pool/ --clobber || true
+
+      - name: Prune old versions from pool
+        run: |
+          # Keep the latest 3 versions of each package to prevent bloat
+          cargo run --release --bin prune || true
+
+      - name: Import GPG private key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        if: env.GPG_PRIVATE_KEY != ''
+        run: |
+          # Import the private key into GPG keyring
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+
+      - name: Sign packages and rebuild metadata indexes
+        env:
+          CRATERIA_GPG_NAME: "jerydleuck@gmail.com"
+          CRATERIA_SKIP_RPM_SIGN_INSTALL: "true"
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          # Re-sign the RPM package files and rebuild all repository metadata indices
+          if [ -n "$GPG_PRIVATE_KEY" ]; then
+            # Run GPG signing and metadata rebuilding tool
+            cargo run --release --bin sign
+          else
+            # Rebuild metadata without GPG signing if key is not configured
+            cargo run --release --bin update
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          # Commit only if files have changed (e.g. packages added or indices updated)
+          git diff-index --quiet HEAD || git commit -m "Import ${{ github.event.client_payload.repo }} ${{ github.event.client_payload.tag }}"
+          git push
