@@ -23,6 +23,10 @@ fn split_parts(s: &str) -> Vec<String> {
 }
 
 fn compare_versions(a: &str, b: &str) -> std::cmp::Ordering {
+    if let (Ok(av), Ok(bv)) = (semver::Version::parse(a), semver::Version::parse(b)) {
+        return av.cmp(&bv);
+    }
+
     let a_parts = split_parts(a);
     let b_parts = split_parts(b);
     for (ap, bp) in a_parts.iter().zip(b_parts.iter()) {

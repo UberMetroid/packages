@@ -1,6 +1,6 @@
 [package]
 name = "crateria-packages"
-version = "3.2.0"
+version = "3.2.1"
 edition = "2024"
 description = "Repository maintenance tools for crateria package distribution"
 
@@ -13,3 +13,4 @@ name = "prune"
 path = "src/prune.rs"
 
 [dependencies]
+semver = "1.0"
