@@ -247,7 +247,7 @@ Description: Spotlight cones sweeping a rising dust starfield
 Package: trance-plugin-bursts
 Version: 0.2.8-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@trance.org>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 348
 Depends: libc6
 Filename: pool/main/trance-plugin-bursts_0.2.8-1_amd64.deb
@@ -295,7 +295,7 @@ Description: City skyline fireworks particle show
 Package: trance-plugin-chaos
 Version: 0.2.8-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@trance.org>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 336
 Depends: libc6
 Filename: pool/main/trance-plugin-chaos_0.2.8-1_amd64.deb
@@ -343,7 +343,7 @@ Description: Chromatic-aberration system logo glitch
 Package: trance-plugin-cosmos
 Version: 0.2.8-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@trance.org>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 350
 Depends: libc6
 Filename: pool/main/trance-plugin-cosmos_0.2.8-1_amd64.deb
@@ -393,7 +393,7 @@ Description: Accretion disk to collapsed singularity lifecycle
 Package: trance-plugin-glyphs
 Version: 0.2.8-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@trance.org>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 315
 Depends: libc6
 Filename: pool/main/trance-plugin-glyphs_0.2.8-1_amd64.deb
@@ -443,7 +443,7 @@ Description: Matrix-style rain with live system information
 Package: trance-plugin-gnats
 Version: 0.2.8-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@trance.org>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 343
 Depends: libc6
 Filename: pool/main/trance-plugin-gnats_0.2.8-1_amd64.deb
@@ -508,7 +508,7 @@ Description: Weaving loom: warp, shuttle, and growing textile
 Package: trance-plugin-radar
 Version: 0.2.8-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@trance.org>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 310
 Depends: libc6
 Filename: pool/main/trance-plugin-radar_0.2.8-1_amd64.deb
@@ -572,7 +572,7 @@ Description: Message relay: packets hop a soft system graph
 Package: trance-plugin-storm
 Version: 0.2.8-1
 Architecture: amd64
-Maintainer: Screensavers Developer <dev@trance.org>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 366
 Depends: libc6
 Filename: pool/main/trance-plugin-storm_0.2.8-1_amd64.deb
