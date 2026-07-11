@@ -4,38 +4,38 @@ Hash: SHA512
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Sat, 11 Jul 2026 21:04:49 +0000
+Date: Sat, 11 Jul 2026 21:11:34 +0000
 Description: crateria APT Repository (stable/main)
 Label: crateria
 Origin: crateria
 Suite: stable
 MD5Sum:
- eeb71bfdada041348808b1ce46593648              191 Release
- ce1aaacb46dd6fc5f87ae8ca5a7eb58e            29569 main/binary-amd64/Packages
- fa19d099afb3b4ca9b2f27160c9abbe0             7076 main/binary-amd64/Packages.gz
+ 9d4d53e3232cfcdce1053c266824dfe1              191 Release
+ 98c6a1cc9a4dc8b4a543474e0ca7ea04            33361 main/binary-amd64/Packages
+ 09127e7d6e03905a4244e60594e560b7             7753 main/binary-amd64/Packages.gz
 SHA1:
- cf28fdb0deeaacfbf58cbf10dfe4b8186b4c76dc              191 Release
- 39e9179537b1eb41d5f5248b1604b5e0969a2586            29569 main/binary-amd64/Packages
- 7f901875c2dbb9a61c19581bfcd537ec53d83b22             7076 main/binary-amd64/Packages.gz
+ 1726b1251db4c59a10eeb32cf2321df95fbf8268              191 Release
+ 06f4b6029dd6c6203464335a85fd549acba5c8ab            33361 main/binary-amd64/Packages
+ 347f556fdaa664448a81192239d0236df8d7d1ff             7753 main/binary-amd64/Packages.gz
 SHA256:
- 6231d73db4f1d3596a99e0b6319f8c753b70f9d2c57dff2dbbebbe93d14fe859              191 Release
- 34bd403c783fe5215fb78e0ac026a0f199482831f135696dd81958b47dfdebf3            29569 main/binary-amd64/Packages
- 7a8c9e714da6eaf3250dcea8dec5835dd606164097e39a455d8f46b98ca809e5             7076 main/binary-amd64/Packages.gz
+ 72bd24b42bc8680adf292879b4b277e780f78350f3939b65b687cd44900a05f2              191 Release
+ 137da979069bec52f77a0ffeb919e93abbe7cd45884fbc4f27ed390f85cc96e1            33361 main/binary-amd64/Packages
+ c71a6abab04fff5d9786d149bb3733dbd912c8fa2659da7601979be479df43f9             7753 main/binary-amd64/Packages.gz
 SHA512:
- ce3247d2891ce5b6fd1484afd35b1b0f053c9fc71fdf04da67af72a7fa09e8f5dd1d4a2199611497d1dadc7d63e157cee405e74992c3358ba8631590590d6757              191 Release
- ccacd67443a1273410e482eea5af1fa6c31ad9ca31c4556d5e3652b023c327753efb428ff603d634ed42b17a9ff7dc51817eb7670c67edb541a8d3ed928cbc9a            29569 main/binary-amd64/Packages
- cbea0fbc89aef45aff8d06b1fb39869fee0aa5695b6989fd06b5b001ef746e8eac70eedbc7da0e3fbbcf08bb16bc0b7f925952b842a916192223dba56e499bba             7076 main/binary-amd64/Packages.gz
+ 006fb13043358767b9d81fd177f6a87481e8616387c1c499569e796f3fe6bda1a2f6a3b170200e782d761d54a749c4a5c922be9e13aeb0d7a595d8127a881a2a              191 Release
+ 33398e77a11178858020ab893ac4c267968bd9ccccf39fcc9ded03557d050d4be8585106fc62df9acc1283d31bf0e791bd14f41eba520eb7e6b9749d34e8110a            33361 main/binary-amd64/Packages
+ 7a60a326442f46ca3c57a7fc5c1ab9cc582096f3da43e3386a20170a4180203d1c6125c37692e1735feea3e0ae63fda8bd2673ca52ed78c6bae3c2cfe8704384             7753 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEVJ5zybySKceG5Tji+9j8UseBfdIFAmpSr/EACgkQ+9j8UseB
-fdJnogv8C8FsB4RJpSuDbofRJrgNIqQoY1T+gDedCoj6gdwa50OpU3ELO9PMIFVU
-w3imNYWPRFd0otVpByOVkCHk6Th5v/gDXWfCTaZ3pYo3VU1hrANY9QTMWti33vb9
-gl29xlNihSPqRybEhi+V13YhWcshPWDhWzMNVero5ZM/cMSJ4nXQRrfxD7Iip8TA
-m+lJtkGT2iqRTi/H9kRNWnC0Z15yiFjHe/pzfYn+t7nG85U/tj6+vC45is/WzVSz
-uA2G068RGeCd3hZo97URxNsPkJLwlUDKp6QP2n7Qefid0KqPZSkO9WlG2XZkvdC4
-EyqmN0uIV2nnlItMpeLkWclaQ2Xsfe+uxE5x57a14JD+sOY20Jn7tfVyIpe+ZYoq
-9/FcQbWe54oFsJ4kKffeKNdflrJGYoIAkt5plaDgtMIoMuxFb/CVb98bRjKuMYdb
-AndWNeSQapbWVQEO2m1Bhz/PTyGf6vJ3DN9SSX4ccyRVuzeeSLqxXeikYXe+fdr2
-6v7u44Cz
-=vMKs
+iQGzBAEBCgAdFiEEVJ5zybySKceG5Tji+9j8UseBfdIFAmpSsYYACgkQ+9j8UseB
+fdJQTAv9G3darrxDt/Q7zdbnQBP2YC/ifgyKWpFgjvO9UEboo0gaW/qHksQ0zfrv
+opp7PbOuTCJlwbXOCANMF7bPyCpPEN7i0NvEWHB22moBQnuGrrfvg4EvCNGb4Ywb
+JgL0U/p3174Dh+xn0letRlXDIrtJZTlliRbYkMs29QQKhmXIdq5HFoSAGy9q04jh
+8kVis7kqkKJKHf3vWfx0D2LzjxJWtWon/G/4epGKKRFeVQnAz/ouES29rMZIzmXP
++iWHxVZECAkGjBvlyzEPx5QLfBUG+rAv25jVqp1ECu4Uw7Mg2dc3SvS93JjUQNtE
+HqHOUWqoDRyRuN2humTJYq0GzptbZ8FzKL3AenZE8/aZWv40KIVWVBHV9CYSH0WP
+IkRHKHOq5Qenv3eNdk8IMKXAbRuIZRYWQCOqWJoTj8KzOHHUiFwOUaQjtQS6Pqqc
++RHvDwLQ1PVCRyB+fG0b2rL2Dk9/J5jxKFoq01+zSF62VXi37xAPnOULwiKKrXiQ
+etsPNPO9
+=VxzF
 -----END PGP SIGNATURE-----
