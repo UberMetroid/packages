@@ -4,38 +4,38 @@ Hash: SHA512
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Sun, 12 Jul 2026 02:23:23 +0000
+Date: Sun, 12 Jul 2026 02:25:58 +0000
 Description: crateria APT Repository (stable/main)
 Label: crateria
 Origin: crateria
 Suite: stable
 MD5Sum:
- fde2071ac0c017d0eb78858daf54e9dc              191 Release
+ c3c00d0d870006c8afcafeef72612e78              191 Release
  0970a159fca0768deb1c8c807eceaf9a            36655 main/binary-amd64/Packages
- de96d1dc9cbf45ccb26205500079e9ba             8307 main/binary-amd64/Packages.gz
+ b63722415fedc6f5939041ec9d5d0fad             8307 main/binary-amd64/Packages.gz
 SHA1:
- 2add9617c9eca366bd15348d2ff9e65795bc5e9d              191 Release
+ b1810cf097b31b5a398445a1acb144705bbd4b5b              191 Release
  87d49dda405bbde7bd93ed163bbd4b69a0de53f4            36655 main/binary-amd64/Packages
- 55f14c9ffec9337a0629b8b19e44e9da30c996e8             8307 main/binary-amd64/Packages.gz
+ c1f64db30b54afe83867b747a15dec8cab0fe3eb             8307 main/binary-amd64/Packages.gz
 SHA256:
- 7e780250ed908f32f05aa7983e4c5f851f92d81650ab419f1d3157ded6fd6c7a              191 Release
+ bfdac546516bda4ff8802b830f8becf8b60e673f323bf51a76ca559b9c6f1d53              191 Release
  568c3ca9e565c67d3e83f1879d3ebef49f7d0cc67c0209d72f24c0ec7b1eb8e5            36655 main/binary-amd64/Packages
- 2b09d3910b3ccf7674763e93cba377206a0bc63fdf5164ae9a97d939813dba31             8307 main/binary-amd64/Packages.gz
+ 7ca43eaea4c75986bef42ee6580c5165c47ecebfbe747454f7aabbcec4723a54             8307 main/binary-amd64/Packages.gz
 SHA512:
- 7826fb6495c1a18aa7dd6e127182dadd837af1d77d18d7d0610461910f7bb494ed877c31bc3810ebe45cbc09e36d3a61c5ef0435203ccb8e256a6074900d466f              191 Release
+ 6eea15186c4067d0f01e5f3fc3b1980cb1b832a6ef1617693600b6a63bc4cd121b2ad88bf961ce35c22de8f918224c46e729b2c7b40c4544186de0aa5881d0a5              191 Release
  023119582d46aaf6bb90aa51ef8f426f27d82056679f09cc37465008df85f757c75dd2ea28de63aa8c59700180641c92652ab034ccfee8aee67b700172b5852e            36655 main/binary-amd64/Packages
- 9bed44a7c4330f41400b7fb1840b97c5354453b5dc148693b192f1d1024d56b2d812957c50951bfa4187cbe94fdafcd7b87e0c3d8d787f4d638366a831e01608             8307 main/binary-amd64/Packages.gz
+ 93a5c44121de9b3f026375a85940ce68d0c0317a530410ccd3345304846ceab5cfd5fb018dce14bf5b9061d3ad7e08437e931455370b28018e6329d8f6604af0             8307 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEVJ5zybySKceG5Tji+9j8UseBfdIFAmpS+psACgkQ+9j8UseB
-fdJmTgv+ITJ4PF21ZITBUp6O8k80596iL8V6iQKeyF+A8VnAcbBJg2KN232wSN66
-Lq/oZD/S/CU7rR/INCa+r1QysMacYQsGy+6vgtMViwHVRbZWjATHZ3JmrKUYk4rz
-170iEpYF5faLGD9QdIp1xOrBWga0tYbfUVY2jmR0a2EbW7AdhOTlWOvTBhR+uhLH
-4FlvSNuPq1/stGcSGeWHzSCF0SAXsVqFWsoUkuPNRTt21R3aVaoYt8LPm+arpIrN
-dZBcNL1VKUu1VsYCEV6m83bC5qoozcQIOVc8IiehIDG4h1+CAPyhTodMUqtDRiuC
-FRgIYtcn3C5dIvgdcLmpwybr4M2KONGMxo5MhxUzl35gz/c5sIfFdONsxx7Bx7pN
-T226tQfPvd5ZByMlpZ8JFIZd/24fvr7YnlSaHj1jKDCvDwm5ktf6EjXuqLV2HLp8
-3KLkAAASTAVpNpsIPJKxKPpY6+ruV2geaw0GjBQkNvekx7C4TS3fr7WEJMoLe71L
-JgQx2ZRJ
-=dDgp
+iQGzBAEBCgAdFiEEVJ5zybySKceG5Tji+9j8UseBfdIFAmpS+zYACgkQ+9j8UseB
+fdJVEgv+JGf45KZ13pjiZU10CPprdpeCNq2qcKQr13G6I3zoLYFBTBD1Q8fatNbR
+9W+px5i/0xY1q/C1CzUfCScA1C/CcIHRoc+fTWq/eTRCBTGVBYNUOFmwXnRGLJ7y
+y2YSUj3Hut5BrI2DHPHZ/EJB6X2y75Trnd5BxK9NOF0ad8C/VFkzZVTvyTDpTnMt
+gW/QSDUiTrqMbvaDUedyAgxmg4KaYBaMRFE/gH8EY9CBmD2/0HLD7Kg4SjJx7aek
+Ol13oG6dBV7C1fLH0q1hmdhQK7tzrYBWX6fJl4PHCMThWsy6lPTpo4mN7TEZfbrO
+488TCUsxQGeB4ebaJ/Wkt5u9y5C6u63hdpbiyGvPITQkvl4lEMKCuNO9HlwAbhbC
+B9v4NPi0PGPSf4PYCFbZZvTVjvMvk0aTjpaLK7QJJ3ZykOiYQyweENAsp3QMbhyQ
+QtinrOfJHUB0bo5xDlGi9blfaBkrX4Q3FyoqJlzHmvDhsZrKi3Bpimca63E9InNp
+t+6GxR0i
+=lIZH
 -----END PGP SIGNATURE-----
