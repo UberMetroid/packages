@@ -99,4 +99,5 @@ jobs:
           git add -A
           # Commit only if files have changed (e.g. packages added or indices updated)
           git diff-index --quiet HEAD || git commit -m "Import ${{ github.event.client_payload.repo }} ${{ github.event.client_payload.tag }}"
+          git pull --rebase
           git push
