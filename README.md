@@ -6,7 +6,7 @@
 
 # Crateria Packages Repository
 
-[![CI](https://github.com/crateria/packages/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/packages/actions/workflows/ci.yml)
+[![CI](https://github.com/crateria/packages/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/packages/actions/workflows/ci.yml) [![APT Repository](https://img.shields.io/badge/apt-repo-blue.svg)](https://crateria.github.io/packages/) [![DNF Repository](https://img.shields.io/badge/dnf-repo-blue.svg)](https://crateria.github.io/packages/)
 
 APT and DNF package distribution repositories for Crateria applications.
 
