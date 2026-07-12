@@ -12,6 +12,9 @@ jobs:
   import:
     name: 'Import & Index Release'
     runs-on: ubuntu-latest
+    env:
+      GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+      GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
     steps:
       - name: Checkout packages repository
         uses: actions/checkout@v4
@@ -48,10 +51,7 @@ jobs:
           cargo run --release --bin prune || true
 
       - name: Import GPG private key
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-        if: secrets.GPG_PRIVATE_KEY != ''
+        if: env.GPG_PRIVATE_KEY != ''
         run: |
           # Set up GPG agent to allow loopback pinentry
           mkdir -p ~/.gnupg
@@ -76,8 +76,6 @@ jobs:
         env:
           CRATERIA_GPG_NAME: ${{ secrets.CRATERIA_GPG_NAME }}
           CRATERIA_SKIP_RPM_SIGN_INSTALL: "true"
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
           # Re-sign the RPM package files and rebuild all repository metadata indices
           export CRATERIA_GPG_NAME="${CRATERIA_GPG_NAME:-jerydleuck@gmail.com}"
