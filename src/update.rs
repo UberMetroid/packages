@@ -188,7 +188,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .map_err(|e| format!("Could not run {gpg_bin} to check keys: {e}"))?;
 
     if !key_check.status.success() {
-        println!("GPG signing key '{}' not found; skipping GPG signing of APT Release", signing_key);
+        println!(
+            "GPG signing key '{}' not found; skipping GPG signing of APT Release",
+            signing_key
+        );
         return Ok(());
     }
 
