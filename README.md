@@ -10,10 +10,41 @@
 
 APT and DNF package distribution repositories for Crateria applications.
 
-## Documentation & Installation
+---
 
-For signed repository configuration steps and package listings, visit:
+## Installation
+
+Configure the repository and install the application packages.
+
+### Fedora / RHEL (DNF)
+```bash
+# Add repository configuration
+sudo curl -o /etc/yum.repos.d/crateria.repo https://crateria.github.io/packages/rpm/crateria.repo
+
+# Install trance screensaver suite
+sudo dnf install trance trance-cli trance-tui trance-applet
+```
+
+### Ubuntu / Debian (APT)
+```bash
+# Add keyring
+sudo curl -sSLo /etc/apt/keyrings/crateria.gpg https://crateria.github.io/packages/apt/crateria-keyring.gpg
+
+# Add sources list
+echo "deb [signed-by=/etc/apt/keyrings/crateria.gpg] https://crateria.github.io/packages/apt stable main" | sudo tee /etc/apt/sources.list.d/crateria.list
+
+# Install trance screensaver suite
+sudo apt update && sudo apt install trance trance-cli trance-tui trance-applet
+```
+
+---
+
+## Documentation
+
+For full repository signing details, manual setup, and package structures, visit:
 👉 **[https://crateria.github.io/](https://crateria.github.io/)**
+
+---
 
 ## License
 
