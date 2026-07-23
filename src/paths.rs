@@ -5,22 +5,26 @@ use std::ffi::OsStr;
 use std::path::{Component, Path, PathBuf};
 
 /// Destination for a swept `.deb` under the apt pool.
-pub fn deb_pool_dest(filename: &OsStr) -> PathBuf {
-    Path::new("apt/pool/main").join(filename)
+///
+/// Returns `None` when `filename` is not a single safe path segment.
+pub fn deb_pool_dest(filename: &OsStr) -> Option<PathBuf> {
+    safe_join_under(Path::new("apt/pool/main"), filename)
 }
 
 /// Destination for a swept `.rpm` under the rpm pool.
-pub fn rpm_pool_dest(filename: &OsStr) -> PathBuf {
-    Path::new("rpm/pool").join(filename)
+///
+/// Returns `None` when `filename` is not a single safe path segment.
+pub fn rpm_pool_dest(filename: &OsStr) -> Option<PathBuf> {
+    safe_join_under(Path::new("rpm/pool"), filename)
 }
 
 /// Map a package file extension to its pool destination path.
 ///
-/// Returns `None` for unknown extensions.
+/// Returns `None` for unknown extensions or unsafe filenames.
 pub fn package_sweep_dest(filename: &OsStr, ext: &str) -> Option<PathBuf> {
     match ext {
-        "deb" => Some(deb_pool_dest(filename)),
-        "rpm" => Some(rpm_pool_dest(filename)),
+        "deb" => deb_pool_dest(filename),
+        "rpm" => rpm_pool_dest(filename),
         _ => None,
     }
 }
@@ -79,6 +83,15 @@ mod tests {
             PathBuf::from("rpm/pool/pkg-1.0-1.x86_64.rpm")
         );
         assert!(package_sweep_dest(f, "txt").is_none());
+    }
+
+    #[test]
+    fn sweep_dest_rejects_unsafe_names() {
+        assert!(package_sweep_dest(OsStr::new(".."), "deb").is_none());
+        assert!(package_sweep_dest(OsStr::new("a/b.deb"), "deb").is_none());
+        assert!(package_sweep_dest(OsStr::new("a\\b.rpm"), "rpm").is_none());
+        assert!(deb_pool_dest(OsStr::new("")).is_none());
+        assert!(rpm_pool_dest(OsStr::new(".")).is_none());
     }
 
     #[test]

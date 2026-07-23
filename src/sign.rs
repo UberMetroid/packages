@@ -45,10 +45,9 @@ fn collect_rpms(pool: &Path) -> Result<Vec<PathBuf>, String> {
             continue;
         };
         // Re-join via safe_join_under so path traversal names are skipped.
+        // Prefer the re-joined path so callers only see base-constrained paths.
         if let Some(safe) = safe_join_under(pool, name) {
-            if safe == path || path.file_name() == safe.file_name() {
-                rpms.push(path);
-            }
+            rpms.push(safe);
         }
     }
     Ok(rpms)
@@ -77,6 +76,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     if !command_exists("rpmsign") {
         if skip_install {
+            // Explicit opt-out of package-manager install must not soft-succeed.
             eprintln!("ERROR: rpmsign not found and CRATERIA_SKIP_RPM_SIGN_INSTALL is set.");
             std::process::exit(1);
         }
@@ -174,6 +174,8 @@ mod tests {
         let found = collect_rpms(&dir).expect("collect");
         assert_eq!(found.len(), 1);
         assert!(found[0].ends_with("a.rpm"));
+        // Returned path is the safe re-join under the pool base.
+        assert_eq!(found[0], dir.join("a.rpm"));
         let _ = fs::remove_dir_all(&dir);
     }
 

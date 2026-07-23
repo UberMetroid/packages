@@ -56,8 +56,9 @@ fn run_createrepo() -> Result<(), String> {
                     .current_dir("rpm"),
             )?;
         } else {
-            println!(
-                "Warning: createrepo_c and nix-shell not found, skipping RPM repository indexing."
+            return Err(
+                "createrepo_c and nix-shell not found; refusing to skip RPM repository indexing"
+                    .into(),
             );
         }
     }
@@ -105,18 +106,20 @@ fn sign_rpm_metadata() -> Result<(), String> {
     Ok(())
 }
 
-/// Returns Ok(true) if Release was signed; Ok(false) if key missing (caller may stop).
-fn sign_apt_release(signing_key: &str, gpg_bin: &str) -> Result<bool, String> {
+/// Sign APT `Release` into `Release.gpg` and `InRelease`.
+///
+/// Refuses to succeed when the signing key is missing — never leave unsigned
+/// APT metadata as a successful update outcome.
+fn sign_apt_release(signing_key: &str, gpg_bin: &str) -> Result<(), String> {
     let key_check = Command::new(gpg_bin)
         .args(["--list-secret-keys", signing_key])
         .output()
         .map_err(|e| format!("Could not run {gpg_bin} to check keys: {e}"))?;
 
     if !key_check.status.success() {
-        println!(
-            "GPG signing key '{signing_key}' not found; skipping GPG signing of APT Release"
-        );
-        return Ok(false);
+        return Err(format!(
+            "GPG signing key '{signing_key}' not found; refusing to publish unsigned APT Release"
+        ));
     }
 
     let _ = fs::remove_file("apt/dists/stable/Release.gpg");
@@ -151,7 +154,7 @@ fn sign_apt_release(signing_key: &str, gpg_bin: &str) -> Result<bool, String> {
             .current_dir("apt"),
     )?;
     println!("Signed Release files successfully.");
-    Ok(true)
+    Ok(())
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -213,11 +216,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         "jerydleuck@gmail.com",
     );
     let gpg_bin = resolve_gpg_bin(std::env::var("CRATERIA_GPG_BIN").ok().as_deref());
-    if !sign_apt_release(&signing_key, &gpg_bin)? {
-        // Preserve historical fail-open: stop after APT index without RPM steps
-        // when the signing key is unavailable.
-        return Ok(());
-    }
+    sign_apt_release(&signing_key, &gpg_bin)?;
 
     run_createrepo()?;
     sign_rpm_metadata()?;

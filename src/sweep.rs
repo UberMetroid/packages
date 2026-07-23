@@ -1,14 +1,15 @@
 //! Move loose package files from a root directory into apt/rpm pools.
 // SPDX-License-Identifier: Apache-2.0
 
-use crate::paths::package_sweep_dest;
+use crate::paths::{is_under_base, package_sweep_dest};
 use std::fs;
 use std::path::Path;
 
 /// Move loose `.deb`/`.rpm` files from `root` into their pools.
 ///
 /// Destinations are `apt/pool/main/<name>` and `rpm/pool/<name>` relative to
-/// `root` (or to the process CWD when `root` is `"."`).
+/// `root` (or to the process CWD when `root` is `"."`). Unsafe filenames
+/// (traversal, separators) are skipped.
 pub fn sweep_loose_packages(root: &Path) -> Result<usize, String> {
     let mut moved = 0usize;
     let entries = match fs::read_dir(root) {
@@ -27,14 +28,25 @@ pub fn sweep_loose_packages(root: &Path) -> Result<usize, String> {
         let Some(name) = path.file_name() else {
             continue;
         };
-        let Some(dest) = package_sweep_dest(name, ext) else {
+        // package_sweep_dest uses safe_join_under — rejects traversal names.
+        let Some(rel_dest) = package_sweep_dest(name, ext) else {
             continue;
         };
         let dest = if root == Path::new(".") {
-            dest
+            rel_dest
         } else {
-            root.join(&dest)
+            root.join(&rel_dest)
         };
+        // Refuse writes that escape the intended pool under root.
+        if root != Path::new(".") && !is_under_base(root, &dest) {
+            return Err(format!(
+                "refusing pool write outside root: {}",
+                dest.display()
+            ));
+        }
+        if let Some(parent) = dest.parent() {
+            fs::create_dir_all(parent).map_err(|e| e.to_string())?;
+        }
         println!("-> Sweeping loose package: {name:?}");
         fs::rename(&path, &dest).map_err(|e| e.to_string())?;
         moved += 1;

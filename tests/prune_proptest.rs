@@ -1,7 +1,7 @@
 //! Property tests for prune selection (keep newest N per package).
 // SPDX-License-Identifier: Apache-2.0
 
-use crateria_packages::{compare_versions, group_by_name, select_to_remove, PackageFile};
+use crateria_packages::{PackageFile, compare_versions, group_by_name, select_to_remove};
 use proptest::prelude::*;
 use std::collections::{HashMap, HashSet};
 use std::path::PathBuf;
@@ -16,21 +16,17 @@ fn pkg_name() -> impl Strategy<Value = String> {
 
 /// One package family with unique paths and semver versions.
 fn package_family() -> impl Strategy<Value = (String, Vec<PackageFile>)> {
-    (
-        pkg_name(),
-        prop::collection::vec(semver_core(), 1..8),
-    )
-        .prop_map(|(name, versions)| {
-            let files: Vec<PackageFile> = versions
-                .into_iter()
-                .enumerate()
-                .map(|(i, version)| PackageFile {
-                    path: PathBuf::from(format!("{name}-{i}-{version}")),
-                    version,
-                })
-                .collect();
-            (name, files)
-        })
+    (pkg_name(), prop::collection::vec(semver_core(), 1..8)).prop_map(|(name, versions)| {
+        let files: Vec<PackageFile> = versions
+            .into_iter()
+            .enumerate()
+            .map(|(i, version)| PackageFile {
+                path: PathBuf::from(format!("{name}-{i}-{version}")),
+                version,
+            })
+            .collect();
+        (name, files)
+    })
 }
 
 proptest! {

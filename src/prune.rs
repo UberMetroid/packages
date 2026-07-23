@@ -2,7 +2,8 @@
 // SPDX-License-Identifier: Apache-2.0
 
 use crateria_packages::package_parse::{parse_deb_filename, parse_rpm_filename};
-use crateria_packages::prune_core::{group_by_name, select_to_remove, PackageFile};
+use crateria_packages::paths::{is_under_base, safe_join_under};
+use crateria_packages::prune_core::{PackageFile, group_by_name, select_to_remove};
 use std::env;
 use std::fs;
 use std::path::Path;
@@ -21,20 +22,26 @@ fn collect_packages(dir_path: &Path, is_deb: bool) -> Result<Vec<(String, Packag
         if !path.is_file() {
             continue;
         }
-        let filename = match path.file_name().and_then(|s| s.to_str()) {
-            Some(f) => f.to_string(),
-            None => continue,
+        let Some(name_os) = path.file_name() else {
+            continue;
+        };
+        let Some(filename) = name_os.to_str() else {
+            continue;
+        };
+        // Only track files whose name is a single safe segment under the pool.
+        let Some(safe_path) = safe_join_under(dir_path, name_os) else {
+            continue;
         };
         let id = if is_deb {
-            parse_deb_filename(&filename)
+            parse_deb_filename(filename)
         } else {
-            parse_rpm_filename(&filename)
+            parse_rpm_filename(filename)
         };
         if let Some(id) = id {
             out.push((
                 id.name,
                 PackageFile {
-                    path,
+                    path: safe_path,
                     version: id.version,
                 },
             ));
@@ -59,6 +66,13 @@ fn prune_directory(dir_path: &Path, keep: usize, is_deb: bool) -> Result<(), Str
 
     let mut removed = 0usize;
     for path in &to_remove {
+        if !is_under_base(dir_path, path) {
+            return Err(format!(
+                "refusing to delete path outside pool {:?}: {}",
+                dir_path,
+                path.display()
+            ));
+        }
         let name = path
             .file_name()
             .map(|s| s.to_string_lossy().into_owned())
@@ -121,10 +135,7 @@ mod tests {
     #[test]
     fn parse_keep_default_and_value() {
         assert_eq!(parse_keep_arg(&["prune".into()]).expect("default"), 3);
-        assert_eq!(
-            parse_keep_arg(&["prune".into(), "5".into()]).expect("5"),
-            5
-        );
+        assert_eq!(parse_keep_arg(&["prune".into(), "5".into()]).expect("5"), 5);
         assert!(parse_keep_arg(&["prune".into(), "x".into()]).is_err());
     }
 

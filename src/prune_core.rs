@@ -19,10 +19,7 @@ pub struct PackageFile {
 /// - Sorting uses [`compare_versions`]; older versions are removed first.
 /// - When versions compare equal, order is stable relative to input grouping
 ///   (not cross-package).
-pub fn select_to_remove(
-    packages: HashMap<String, Vec<PackageFile>>,
-    keep: usize,
-) -> Vec<PathBuf> {
+pub fn select_to_remove(packages: HashMap<String, Vec<PackageFile>>, keep: usize) -> Vec<PathBuf> {
     let mut remove = Vec::new();
     for (_pkg, mut files) in packages {
         files.sort_by(|a, b| compare_versions(&a.version, &b.version));

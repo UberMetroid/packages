@@ -1,14 +1,17 @@
 //! Property tests for GPG identity helpers and rpmmacros generation.
 // SPDX-License-Identifier: Apache-2.0
 
-use crateria_packages::{
-    build_rpmmacros, gpg_name_is_valid, resolve_gpg_bin, resolve_signing_key,
-};
+use crateria_packages::{build_rpmmacros, gpg_name_is_valid, resolve_gpg_bin, resolve_signing_key};
 use proptest::prelude::*;
 
 fn non_empty_line() -> impl Strategy<Value = String> {
     // Avoid newlines so macro file lines stay single-line (as callers should).
     prop::string::string_regex("[^\\n\\r]{1,40}").expect("line")
+}
+
+fn safe_macro_field() -> impl Strategy<Value = String> {
+    // Non-empty, no CR/LF — valid for embedding in a single macro line.
+    prop::string::string_regex("[A-Za-z0-9@._+/\\-]{1,40}").expect("field")
 }
 
 fn maybe_spaces() -> impl Strategy<Value = String> {
@@ -29,12 +32,26 @@ proptest! {
 }
 
 proptest! {
+    /// Newlines in identity always invalidate the name.
+    #[test]
+    fn prop_gpg_name_rejects_newlines(
+        left in prop::string::string_regex("[A-Za-z0-9]{0,12}").expect("l"),
+        right in prop::string::string_regex("[A-Za-z0-9]{0,12}").expect("r"),
+    ) {
+        let with_lf = format!("{left}\n{right}");
+        let with_cr = format!("{left}\r{right}");
+        prop_assert!(!gpg_name_is_valid(&with_lf));
+        prop_assert!(!gpg_name_is_valid(&with_cr));
+    }
+}
+
+proptest! {
     /// Macros always embed name and bin; path line only when provided.
     #[test]
     fn prop_macros_contain_fields(
-        name in non_empty_line(),
-        bin in non_empty_line(),
-        path in prop::option::of(non_empty_line()),
+        name in safe_macro_field(),
+        bin in safe_macro_field(),
+        path in prop::option::of(safe_macro_field()),
     ) {
         let content = build_rpmmacros(&name, &bin, path.as_deref());
         prop_assert!(content.contains("%_signature gpg\n"));
@@ -51,6 +68,9 @@ proptest! {
                 prop_assert!(!content.contains("%_gpg_path"));
             }
         }
+        // Exactly one line per macro key — no injection.
+        prop_assert_eq!(content.matches("%_gpg_name ").count(), 1);
+        prop_assert_eq!(content.matches("%_gpgbin ").count(), 1);
     }
 }
 
@@ -70,12 +90,14 @@ proptest! {
 }
 
 proptest! {
-    /// resolve_gpg_bin defaults to "gpg" when missing or empty.
+    /// resolve_gpg_bin defaults to "gpg" when missing, empty, or unsafe.
     #[test]
     fn prop_resolve_gpg_bin(env in prop::option::of(".*{0,20}")) {
         let got = resolve_gpg_bin(env.as_deref());
         match &env {
-            Some(v) if !v.is_empty() => prop_assert_eq!(&got, v),
+            Some(v) if !v.is_empty() && !v.contains('\n') && !v.contains('\r') => {
+                prop_assert_eq!(&got, v);
+            }
             _ => prop_assert_eq!(got, "gpg"),
         }
     }
@@ -85,8 +107,8 @@ proptest! {
     /// Macros end with a trailing newline (file-friendly).
     #[test]
     fn prop_macros_trailing_newline(
-        name in non_empty_line(),
-        bin in non_empty_line(),
+        name in safe_macro_field(),
+        bin in safe_macro_field(),
         with_path in any::<bool>(),
     ) {
         let path = if with_path { Some("/tmp/gnupg") } else { None };

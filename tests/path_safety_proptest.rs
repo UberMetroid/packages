@@ -42,6 +42,8 @@ proptest! {
         let back = format!("{left}\\{right}");
         prop_assert!(safe_join_under(base, OsStr::new(&slash)).is_none());
         prop_assert!(safe_join_under(base, OsStr::new(&back)).is_none());
+        prop_assert!(package_sweep_dest(OsStr::new(&slash), "deb").is_none());
+        prop_assert!(package_sweep_dest(OsStr::new(&back), "rpm").is_none());
     }
 }
 
@@ -53,6 +55,8 @@ proptest! {
         prop_assert!(safe_join_under(base, OsStr::new(".")).is_none());
         prop_assert!(safe_join_under(base, OsStr::new("..")).is_none());
         prop_assert!(safe_join_under(base, OsStr::new("")).is_none());
+        prop_assert!(deb_pool_dest(OsStr::new("..")).is_none());
+        prop_assert!(rpm_pool_dest(OsStr::new(".")).is_none());
     }
 }
 
@@ -66,9 +70,11 @@ proptest! {
         let r = package_sweep_dest(OsStr::new(&rpm), "rpm").expect("rpm");
         prop_assert!(d.starts_with("apt/pool/main"));
         prop_assert!(r.starts_with("rpm/pool"));
-        prop_assert_eq!(d, deb_pool_dest(OsStr::new(&deb)));
-        prop_assert_eq!(r, rpm_pool_dest(OsStr::new(&rpm)));
+        prop_assert_eq!(&d, &deb_pool_dest(OsStr::new(&deb)).expect("deb dest"));
+        prop_assert_eq!(&r, &rpm_pool_dest(OsStr::new(&rpm)).expect("rpm dest"));
         prop_assert!(package_sweep_dest(OsStr::new(&deb), "txt").is_none());
+        prop_assert!(is_under_base(Path::new("apt/pool/main"), &d));
+        prop_assert!(is_under_base(Path::new("rpm/pool"), &r));
     }
 }
 
@@ -81,5 +87,6 @@ proptest! {
         let abs = format!("/{rest}");
         // On Unix Path::new("/foo").is_absolute() is true.
         prop_assert!(safe_join_under(base, OsStr::new(&abs)).is_none());
+        prop_assert!(package_sweep_dest(OsStr::new(&abs), "deb").is_none());
     }
 }
