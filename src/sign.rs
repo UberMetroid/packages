@@ -2,9 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 use crateria_packages::paths::{is_rpm_path, safe_join_under};
-use crateria_packages::sign_macros::{
-    build_rpmmacros, gpg_name_is_valid, resolve_gpg_bin,
-};
+use crateria_packages::sign_macros::{build_rpmmacros, gpg_name_is_valid, resolve_gpg_bin};
 use std::env;
 use std::fs;
 use std::path::{Path, PathBuf};
@@ -75,9 +73,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // Sanitize like update: reject empty/CRLF so macros and Command stay single-line.
     let gpg_bin = resolve_gpg_bin(env::var("CRATERIA_GPG_BIN").ok().as_deref());
-    let gpg_path = env::var("CRATERIA_GPG_PATH").ok().filter(|p| {
-        !p.is_empty() && !p.contains('\n') && !p.contains('\r')
-    });
+    let gpg_path = env::var("CRATERIA_GPG_PATH")
+        .ok()
+        .filter(|p| !p.is_empty() && !p.contains('\n') && !p.contains('\r'));
     let skip_install = env::var_os("CRATERIA_SKIP_RPM_SIGN_INSTALL").is_some();
 
     if !command_exists("rpmsign") {
