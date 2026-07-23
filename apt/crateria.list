@@ -1,2 +1,3 @@
-# Preferred: keyring under /etc/apt/keyrings (does not trust the key for all repos).
-deb [arch=amd64 signed-by=/etc/apt/keyrings/crateria.gpg] https://idlescreen.github.io/packages/apt stable main
+# IdleScreen APT repository (filename retained for compatibility)
+# Preferred: keyring under /etc/apt/keyrings
+deb [arch=amd64 signed-by=/etc/apt/keyrings/idlescreen.gpg] https://idlescreen.github.io/packages/apt stable main
