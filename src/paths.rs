@@ -129,4 +129,14 @@ mod tests {
         let ok = safe_join_under(base, &bad).expect("plain");
         assert!(is_under_base(base, &ok));
     }
+
+    #[test]
+    fn is_under_base_requires_strict_child() {
+        let base = Path::new("/var/lib/pool");
+        assert!(!is_under_base(base, base));
+        assert!(!is_under_base(base, Path::new("/var/lib")));
+        assert!(!is_under_base(base, Path::new("/var/lib/other")));
+        assert!(is_under_base(base, Path::new("/var/lib/pool/a.rpm")));
+        assert!(!is_under_base(base, Path::new("/var/lib/pool-extra/x")));
+    }
 }

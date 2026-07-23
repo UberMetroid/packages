@@ -2,7 +2,9 @@
 // SPDX-License-Identifier: Apache-2.0
 
 use crateria_packages::paths::{is_rpm_path, safe_join_under};
-use crateria_packages::sign_macros::{build_rpmmacros, gpg_name_is_valid};
+use crateria_packages::sign_macros::{
+    build_rpmmacros, gpg_name_is_valid, resolve_gpg_bin,
+};
 use std::env;
 use std::fs;
 use std::path::{Path, PathBuf};
@@ -58,20 +60,24 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         Ok(val) if gpg_name_is_valid(&val) => val,
         _ => {
             eprintln!(
-                "ERROR: CRATERIA_GPG_NAME is not set.\n\n\
+                "ERROR: CRATERIA_GPG_NAME is unset or invalid (empty/newlines).\n\n\
                  Export the signing identity (email or exact uid string), for example:\n\
                  \texport CRATERIA_GPG_NAME='packages@example.com'\n\
                  \t# optional:\n\
                  \texport CRATERIA_GPG_PATH=\"$HOME/.gnupg\"\n\
+                 \texport CRATERIA_GPG_BIN=gpg\n\
                  \tcargo run --release --bin sign\n\n\
-                 See docs/SIGNING.md."
+                 See README Security and the import-release workflow."
             );
             std::process::exit(1);
         }
     };
 
-    let gpg_bin = env::var("CRATERIA_GPG_BIN").unwrap_or_else(|_| "gpg".to_string());
-    let gpg_path = env::var("CRATERIA_GPG_PATH").ok();
+    // Sanitize like update: reject empty/CRLF so macros and Command stay single-line.
+    let gpg_bin = resolve_gpg_bin(env::var("CRATERIA_GPG_BIN").ok().as_deref());
+    let gpg_path = env::var("CRATERIA_GPG_PATH").ok().filter(|p| {
+        !p.is_empty() && !p.contains('\n') && !p.contains('\r')
+    });
     let skip_install = env::var_os("CRATERIA_SKIP_RPM_SIGN_INSTALL").is_some();
 
     if !command_exists("rpmsign") {
@@ -184,5 +190,24 @@ mod tests {
         let dir = env::temp_dir().join("crateria-sign-missing-noexist");
         let _ = fs::remove_dir_all(&dir);
         assert!(collect_rpms(&dir).expect("ok").is_empty());
+    }
+
+    #[test]
+    fn collect_rpms_returns_paths_under_pool() {
+        let n = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .map(|d| d.as_nanos())
+            .unwrap_or(0);
+        let dir = env::temp_dir().join(format!("crateria-sign-under-{n}"));
+        fs::create_dir_all(&dir).expect("mkdir");
+        fs::write(dir.join("pkg-1.0-1.x86_64.rpm"), b"r").expect("rpm");
+        let found = collect_rpms(&dir).expect("collect");
+        assert_eq!(found.len(), 1);
+        assert!(
+            found[0].starts_with(&dir),
+            "signed path must stay under pool: {:?}",
+            found[0]
+        );
+        let _ = fs::remove_dir_all(&dir);
     }
 }

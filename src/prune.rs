@@ -166,4 +166,16 @@ mod tests {
         let _ = fs::remove_dir_all(&dir);
         prune_directory(&dir, 3, true).expect("missing ok");
     }
+
+    #[test]
+    fn collect_skips_unparseable_and_keeps_safe_paths() {
+        let dir = temp_dir("collect");
+        fs::write(dir.join("ok_1.0.0_amd64.deb"), b"x").expect("write");
+        fs::write(dir.join("notes.txt"), b"t").expect("txt");
+        let entries = collect_packages(&dir, true).expect("collect");
+        assert_eq!(entries.len(), 1);
+        assert_eq!(entries[0].0, "ok");
+        assert!(is_under_base(&dir, &entries[0].1.path));
+        let _ = fs::remove_dir_all(&dir);
+    }
 }
