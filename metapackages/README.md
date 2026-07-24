@@ -1,9 +1,10 @@
 # Metapackages
 
-Product-level install units published via this package host.
+Product-level install units.
 
-| Meta | Pulls |
-|------|--------|
-| [idlescreen-cosmic](idlescreen-cosmic/) | `idlescreen` + `idlescreen-applet` + `idlescreen-savers` |
+| Meta | Install | Pulls |
+|------|---------|--------|
+| [app-cosmic](app-cosmic/) | `dnf/apt install app-cosmic` | daemon + **all** savers + COSMIC applet |
 
-Engines remain separate packages (`idlescreen`, `saver-*`, …).
+Built primarily from product repos (e.g. app-cosmic Cargo packaging). Notes
+here are the packages-host contract.
