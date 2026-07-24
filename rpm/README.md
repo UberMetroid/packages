@@ -1,17 +1,13 @@
-# IdleScreen RPM repository
+# RPM repository
 
-Signed RPM packages for IdleScreen, served from
-[idlescreen.github.io/packages/rpm](https://idlescreen.github.io/packages/rpm).
-
-Shipped package names remain `trance` / `trance-*` for install stability.
-Repo drop-in filename on the host may still be `crateria.repo`.
-
-## Add the repository
+Drop-in:
 
 ```bash
-sudo curl -fsSL https://idlescreen.github.io/packages/rpm/crateria.repo \
+sudo curl -fsSL https://idlescreen.github.io/packages/rpm/idlescreen.repo \
   -o /etc/yum.repos.d/idlescreen.repo
-sudo dnf install trance
 ```
 
-See the [packages README](../README.md) for the full pipeline.
+Files:
+
+- `idlescreen.repo` — canonical repo drop-in
+- `idlescreen-key.gpg` — package signing key

@@ -2,27 +2,39 @@
 
 Signed APT and DNF index: **[idlescreen.github.io/packages](https://idlescreen.github.io/packages/)**
 
-## Users install products
+## Fedora
 
 ```bash
-# Fedora
-sudo curl -fsSL https://idlescreen.github.io/packages/rpm/crateria.repo \
+sudo curl -fsSL https://idlescreen.github.io/packages/rpm/idlescreen.repo \
   -o /etc/yum.repos.d/idlescreen.repo
 sudo dnf install idle-cosmic
-
-# Optional
+# optional
 sudo dnf install idle-tui
 ```
 
-| Product | Pulls |
-|---------|--------|
-| **idle-cosmic** | `idle-daemon` + `idle-savers` + applet |
-| **idle-tui** | `idle-daemon` + TUI |
-| **idle-studio** | offline director |
+## Debian / Ubuntu / Pop!_OS
 
-Engine packages (`idle-daemon`, `idle-cli`, `idle-saver-*`) are **dependencies**, not the advertised install.
+```bash
+sudo mkdir -p /etc/apt/keyrings
+sudo curl -fsSL https://idlescreen.github.io/packages/apt/idlescreen-keyring.gpg \
+  -o /etc/apt/keyrings/idlescreen.gpg
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/idlescreen.gpg] https://idlescreen.github.io/packages/apt stable main" \
+  | sudo tee /etc/apt/sources.list.d/idlescreen.list
+sudo apt update
+sudo apt install idle-cosmic
+```
 
-CLI command after install: **`idle`**.
+## Products (what users install)
+
+| Package | Role |
+|---------|------|
+| **idle-cosmic** | COSMIC: daemon + all savers + applet |
+| **idle-tui** | Live TUI |
+| **idle-studio** | Offline director |
+
+Engine packages (`idle-daemon`, `idle-cli`, `idle-saver-*`) are dependencies — not the advertised install path.
+
+CLI after install: **`idle`**.
 
 ## Source
 
