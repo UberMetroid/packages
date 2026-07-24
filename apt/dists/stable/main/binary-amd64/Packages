@@ -118,6 +118,26 @@ Description: Accretion disk to collapsed singularity lifecycle
  Accretion disk to collapsed singularity lifecycle. Official IdleScreen (Trance)
  screensaver plugin.
 
+Package: idle-saver-glyphs
+Version: 2.0.2-1
+Architecture: amd64
+Maintainer: idlescreen <jerydleuck@gmail.com>
+Installed-Size: 379
+Depends: libc6
+Conflicts: trance-plugin-glyphs (<< 2.0.0)
+Replaces: trance-plugin-glyphs
+Provides: trance-plugin-glyphs
+Filename: pool/main/idle-saver-glyphs_2.0.2-1_amd64.deb
+Size: 168876
+MD5sum: a8f25ce45ad795ac3988e94af93b4191
+SHA1: 4d09a009ce42e53509ce58411fe72a5c24d828c9
+SHA256: dc175198252e2aed3d5aff464bfe5d738284c44f0122381ad41d9911a662b741
+Section: utils
+Priority: optional
+Description: Matrix-style rain with live system information
+ Matrix-style rain with live system information. Official IdleScreen (Trance)
+ screensaver plugin.
+
 Package: idle-savers
 Version: 2.3.1-1
 Architecture: amd64
