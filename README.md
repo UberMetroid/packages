@@ -15,7 +15,7 @@ Signed APT (`.deb`) and DNF (`.rpm`) repositories for **IdleScreen**.
 
 Server asset filenames and some env vars may still use a historical
 `crateria-*` / `CRATERIA_*` prefix for compatibility. The public host and brand
-are IdleScreen. Shipped application package names remain `trance` / `trance-*`.
+are IdleScreen. Shipped package names are `idlescreen` / `idlescreen-*` / `saver-*` (see idle-core `docs/NAMING.md`). Legacy `trance*` packages are provided/obsoleted for upgrades.
 
 ## User install
 
@@ -28,7 +28,7 @@ sudo curl -fsSL https://idlescreen.github.io/packages/apt/crateria-keyring.gpg \
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/idlescreen.gpg] https://idlescreen.github.io/packages/apt stable main" \
   | sudo tee /etc/apt/sources.list.d/idlescreen.list
 sudo apt update
-sudo apt install trance
+sudo apt install idlescreen
 ```
 
 ### Fedora
@@ -36,10 +36,10 @@ sudo apt install trance
 ```bash
 sudo curl -fsSL https://idlescreen.github.io/packages/rpm/crateria.repo \
   -o /etc/yum.repos.d/idlescreen.repo
-sudo dnf install trance
+sudo dnf install idlescreen
 ```
 
-Optional packages: `trance-plugin-*`, meta package `trance-plugins-all`.
+Optional packages: `saver-*`, meta `idlescreen-savers`, COSMIC `idlescreen-applet` / product `idlescreen-cosmic`.
 
 ## Release to index pipeline
 

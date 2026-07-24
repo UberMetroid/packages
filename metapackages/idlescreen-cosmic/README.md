@@ -4,9 +4,12 @@ Product install for COSMIC users:
 
 ```text
 idlescreen-cosmic
-  Depends:    trance, trance-applet, trance-plugins-all
-  Recommends: trance-tui, trance-cli
+  Depends:    idlescreen, idlescreen-applet, idlescreen-savers
+  Recommends: idlescreen-tui, idlescreen-cli
 ```
+
+Legacy packages `trance`, `trance-applet`, `trance-plugins-all` are **Obsoleted /
+Replaced** by the names above (transition from IdleScreen 1.x → 2.0).
 
 ## Build a local .deb (equivs)
 
@@ -15,8 +18,5 @@ sudo apt install equivs
 cd metapackages/idlescreen-cosmic
 equivs-build control
 ```
-
-Publish the resulting `.deb` through the normal packages import pipeline, or
-vendor into release automation later.
 
 Source app: [app-cosmic](https://github.com/idlescreen/app-cosmic).
