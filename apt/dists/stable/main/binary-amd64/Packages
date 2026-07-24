@@ -58,6 +58,26 @@ Description: Spotlight cones sweeping a rising dust starfield
  Spotlight cones sweeping a rising dust starfield. Official IdleScreen (Trance)
  screensaver plugin.
 
+Package: idle-saver-bursts
+Version: 2.0.2-1
+Architecture: amd64
+Maintainer: idlescreen <jerydleuck@gmail.com>
+Installed-Size: 415
+Depends: libc6
+Conflicts: trance-plugin-bursts (<< 2.0.0)
+Replaces: trance-plugin-bursts
+Provides: trance-plugin-bursts
+Filename: pool/main/idle-saver-bursts_2.0.2-1_amd64.deb
+Size: 193796
+MD5sum: fb1e44ba4419d29d8ee4b22861edda03
+SHA1: 3b2d05e37fe0c8fc14b2c4147180cad0a42f8749
+SHA256: 68c703036abba8edb402d96fd67880e47eebdc5f43ac74e6986b719873dd8bd5
+Section: utils
+Priority: optional
+Description: City skyline fireworks particle show
+ City skyline fireworks particle show. Official IdleScreen (Trance) screensaver
+ plugin.
+
 Package: idle-savers
 Version: 2.3.1-1
 Architecture: amd64
