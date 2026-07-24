@@ -28,7 +28,7 @@ sudo curl -fsSL https://idlescreen.github.io/packages/apt/crateria-keyring.gpg \
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/idlescreen.gpg] https://idlescreen.github.io/packages/apt stable main" \
   | sudo tee /etc/apt/sources.list.d/idlescreen.list
 sudo apt update
-sudo apt install app-cosmic   # COSMIC product
+sudo apt install idle-cosmic   # COSMIC product
 # or: sudo apt install idlescreen
 ```
 
@@ -37,11 +37,11 @@ sudo apt install app-cosmic   # COSMIC product
 ```bash
 sudo curl -fsSL https://idlescreen.github.io/packages/rpm/crateria.repo \
   -o /etc/yum.repos.d/idlescreen.repo
-sudo dnf install app-cosmic   # COSMIC product
+sudo dnf install idle-cosmic   # COSMIC product
 # or: sudo dnf install idlescreen
 ```
 
-COSMIC product: `app-cosmic` (daemon + all savers + applet). Pieces: `idlescreen`, `idlescreen-savers` / `saver-*`, `idlescreen-cli`.
+COSMIC product: `idle-cosmic` (daemon + all savers + applet). Pieces: `idlescreen`, `idlescreen-savers` / `saver-*`, `idlescreen-cli`.
 
 ## Release to index pipeline
 
