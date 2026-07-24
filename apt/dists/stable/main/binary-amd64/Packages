@@ -17,6 +17,31 @@ Priority: optional
 Description: Command-line interface for the IdleScreen daemon
  CLI for controlling the Idle daemon over D-Bus (command: idle).
 
+Package: idle-cosmic
+Version: 2.1.2-1
+Architecture: amd64
+Maintainer: IdleScreen <jerydleuck@gmail.com>
+Installed-Size: 48885
+Depends: idle-daemon, idle-savers, libc6
+Recommends: idle-cli, idle-tui
+Enhances: cosmic-session, cosmic-panel
+Conflicts: app-cosmic (<< 2.1.0), idlescreen-applet (<< 2.1.0), trance-applet (<< 2.0.0)
+Replaces: app-cosmic, idlescreen-applet, trance-applet, idlescreen-cosmic
+Provides: app-cosmic, idlescreen-applet, trance-applet, idlescreen-cosmic
+Filename: pool/main/idle-cosmic_2.1.2-1_amd64.deb
+Size: 12728044
+MD5sum: a8d9eb1ff7306f38edb4388d0294b1b5
+SHA1: e2562a0b44b0d28e067a0be8bb05cc4884b1a3c4
+SHA256: 952429e1178a88aa46a5c40eb9ec4057e369d327f0459c15ef2c265270c47d8b
+Section: utils
+Priority: optional
+Homepage: https://github.com/idlescreen/idle-cosmic
+Description: IdleScreen for COSMIC — product package (applet + pulls daemon and all
+ savers)
+ IdleScreen product for COSMIC Desktop.
+ Installs the COSMIC panel applet and depends on the idle daemon and all
+ official savers.
+
 Package: idle-daemon
 Version: 2.3.1-1
 Architecture: amd64
