@@ -1,3 +1,63 @@
+Package: idle-cli
+Version: 2.3.1-1
+Architecture: amd64
+Maintainer: IdleScreen <jerydleuck@gmail.com>
+Installed-Size: 5685
+Depends: idle-daemon, libc6
+Conflicts: idlescreen-cli (<< 2.1.0), idle-cli (<< 2.0.0)
+Replaces: idlescreen-cli, idle-cli
+Provides: idlescreen-cli, idle-cli
+Filename: pool/main/idle-cli_2.3.1-1_amd64.deb
+Size: 871884
+MD5sum: 57a2ebfeb02ae3d764daa90e61608a5a
+SHA1: f3f5a2bd143d67ee98fd369e907521bd34afa86e
+SHA256: 76e264ef64473d1719af065bb67d9c3f3014841473fb9c60a3c8e83aef1335eb
+Section: utils
+Priority: optional
+Description: Command-line interface for the IdleScreen daemon
+ CLI for controlling the Idle daemon over D-Bus (command: idle).
+
+Package: idle-daemon
+Version: 2.3.1-1
+Architecture: amd64
+Maintainer: IdleScreen <jerydleuck@gmail.com>
+Installed-Size: 16462
+Depends: dbus, fonts-dejavu-core, idle-saver-beams, libc6
+Recommends: idle-savers, idle-cli
+Suggests: idle-cosmic
+Conflicts: idlescreen (<< 2.1.0), trance (<< 2.0.0)
+Replaces: idlescreen, trance
+Provides: idle, idlescreen, trance
+Filename: pool/main/idle-daemon_2.3.1-1_amd64.deb
+Size: 2485868
+MD5sum: c47c9231a7e356f1c3d6e4ada63085b5
+SHA1: 3efcafd973d1134557c9e0da111f6c514d0ad9c5
+SHA256: b268a51461b94f0d5250a3c2c433a431c43b04b9a811a881f12e5f84ab117327
+Section: utils
+Priority: optional
+Description: IdleScreen background idle daemon (Wayland screensaver host)
+ IdleScreen background idle monitoring and screensaver host for Wayland.
+
+Package: idle-savers
+Version: 2.3.1-1
+Architecture: amd64
+Maintainer: IdleScreen <jerydleuck@gmail.com>
+Installed-Size: 4
+Depends: idle-daemon, idle-saver-beams, idle-saver-bursts, idle-saver-chaos, idle-saver-cosmos, idle-saver-glyphs, idle-saver-gnats, idle-saver-hearth, idle-saver-radar, idle-saver-ripple, idle-saver-storm
+Conflicts: idle-plugins-all (<< 2.0.0)
+Replaces: idlescreen-savers, idle-plugins-all
+Provides: idlescreen-savers, idle-plugins-all
+Filename: pool/main/idle-savers_2.3.1-1_amd64.deb
+Size: 1336
+MD5sum: e73a76b2327729532e7784cace520a63
+SHA1: f9e12e99b8038384343beb2b793cd0b11c198ec6
+SHA256: ec4ae3967a17d329f36c81274118f721fdd3d5981b8ab354b810fe5aa10ad21f
+Section: utils
+Priority: optional
+Description: Meta package that hard-depends on all official IdleScreen saver plugins
+ Installs every official IdleScreen screensaver plugin (saver-*). Pulled in by
+ idle-cosmic (not installed alone by end users).
+
 Package: idlescreen
 Version: 2.0.0-1
 Architecture: amd64
